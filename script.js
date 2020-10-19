@@ -45,6 +45,7 @@ calendar1.createSchedules([
         {
             id: "76omfffcqnl6p81mi8j472875k",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Begrüßungsveranstaltung",
@@ -56,6 +57,7 @@ calendar1.createSchedules([
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201020T120000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -70,6 +72,7 @@ Livestream der Fachschaft
         {
             id: "7ttukdrp38a6q7q3sjhqf242nu",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Spiele &amp; Interaktion",
@@ -82,6 +85,7 @@ Gemütlich! `,
         {
             id: "38jpv262qraegpbbsnlg2uecpn",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "How to 1. Semester",
@@ -93,6 +97,7 @@ Gemütlich! `,
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201021T120000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -107,6 +112,7 @@ Livestream der Fachschaft
         {
             id: "5a0pn04pdtc4rcohof438emhk9",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Lasagne kochen",
@@ -119,6 +125,7 @@ Lange Rede, kurzer Sinn: Wie der Titel schon sagt werden wir in diesem Stream ve
         {
             id: "01oaf7tui5j4mdv9csuv1csjf5",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Uni Orga Q&amp;A (Prüfungen etc.)",
@@ -130,6 +137,7 @@ Lange Rede, kurzer Sinn: Wie der Titel schon sagt werden wir in diesem Stream ve
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201022T120000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -144,6 +152,7 @@ Livestream der Fachschaft
         {
             id: "472o6uf8jec53c73jcduuijfq8",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Talk: Worsch (GBI)",
@@ -155,6 +164,7 @@ Livestream der Fachschaft
         {
             id: "6e5rfe2i53b5no33cnenrccdns",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Live Musik",
@@ -166,6 +176,7 @@ Livestream der Fachschaft
         {
             id: "6qk4gesjaqbetjlug8ljs137qf",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Wohnen in Karlsruhe Q&amp;A",
@@ -177,6 +188,7 @@ Livestream der Fachschaft
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201023T120000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -191,6 +203,7 @@ Livestream der Fachschaft
         {
             id: "7rj5re9amuk30t6lfb3rjai7do",
             calendarId: "1",
+            bgColor: "#7986cb",
 
             category: "time",
             title: "LA mit Benedikt",
@@ -205,6 +218,7 @@ Mit Benedikt eurem Lieblings LA Tutor.`,
         {
             id: "3ue8qrkagaiamambus6o30ip8u",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Cocktails Machen &amp; Konsumieren",
@@ -216,6 +230,7 @@ Mit Benedikt eurem Lieblings LA Tutor.`,
         {
             id: "6ijo0rdqr5jlg85rhi4knm5f7n",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "24h Stream",
@@ -227,6 +242,7 @@ Mit Benedikt eurem Lieblings LA Tutor.`,
         {
             id: "3kohd5jjkq6op18uoqo5lo8s4o",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Katerfrühstück",
@@ -238,6 +254,7 @@ Mit Benedikt eurem Lieblings LA Tutor.`,
         {
             id: "7hsqtoh9igcrjai8ai2r1r92io",
             calendarId: "1",
+            bgColor: "#7986cb",
 
             category: "time",
             title: "Frühstücksstream mit Adrian (AStA)",
@@ -252,6 +269,7 @@ Immer gut gekleidet und mit einem Lächeln, das tauglich ist euch alles zu verka
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201026T130000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -266,6 +284,7 @@ Livestream der Fachschaft
         {
             id: "48jiltme7k621vdqrgj5lf8edr",
             calendarId: "1",
+            bgColor: "#7986cb",
 
             category: "time",
             title: "Talk &amp; Chill: Leonid (Maddhe)",
@@ -277,6 +296,7 @@ Livestream der Fachschaft
         {
             id: "2sgvom88nukqj7akhj5aoqjjce",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Live Shader Programming",
@@ -288,6 +308,7 @@ Livestream der Fachschaft
         {
             id: "262aneh52v181634vqkref8shj",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Talk: Sauer (Online Lehre / Mathe)",
@@ -299,6 +320,7 @@ Livestream der Fachschaft
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201027T130000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -313,6 +335,7 @@ Livestream der Fachschaft
         {
             id: "35knuubk3lajj79kpjemlains0",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Kochen in 3 Schwierigkeitsstufen",
@@ -324,6 +347,7 @@ Livestream der Fachschaft
         {
             id: "09om7sgnvhblj1u2qiqhn6a2vp",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Was ist Fachschaft?",
@@ -335,6 +359,7 @@ Livestream der Fachschaft
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201028T130000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -349,6 +374,7 @@ Livestream der Fachschaft
         {
             id: "1uk25ctth0a266e99hcs8mgter",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Leben in Karlsruhe",
@@ -360,6 +386,7 @@ Livestream der Fachschaft
         {
             id: "1ie1en9oh289o1t2e0a7de7rh4",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Talk: Tichy",
@@ -378,6 +405,7 @@ Diese Ereignis wird auch über den Kanal der Fachschaft übertragen.`,
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201029T130000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -392,6 +420,7 @@ Livestream der Fachschaft
         {
             id: "5bv1h1io32m9uh1ec3rulhhll2",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "r/KaIT Browsen &amp; Unsinn",
@@ -403,6 +432,7 @@ Livestream der Fachschaft
         {
             id: "0tefgs0gc0jffth1104jns89b9",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Reste Q&amp;A",
@@ -414,6 +444,7 @@ Livestream der Fachschaft
         {
             id: "0eaiq87d5fbivqjaem4re1vhpt",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Behind the Scenes",
@@ -425,6 +456,7 @@ Livestream der Fachschaft
         {
             id: "71vob33rfmp26dpqslvleq7i5f",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Cocktails Machen &amp; Konsumieren",
@@ -440,6 +472,7 @@ calendar2.createSchedules([
         {
             id: "76omfffcqnl6p81mi8j472875k",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Begrüßungsveranstaltung",
@@ -451,6 +484,7 @@ calendar2.createSchedules([
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201020T120000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -465,6 +499,7 @@ Livestream der Fachschaft
         {
             id: "7ttukdrp38a6q7q3sjhqf242nu",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Spiele &amp; Interaktion",
@@ -477,6 +512,7 @@ Gemütlich! `,
         {
             id: "38jpv262qraegpbbsnlg2uecpn",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "How to 1. Semester",
@@ -488,6 +524,7 @@ Gemütlich! `,
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201021T120000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -502,6 +539,7 @@ Livestream der Fachschaft
         {
             id: "5a0pn04pdtc4rcohof438emhk9",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Lasagne kochen",
@@ -514,6 +552,7 @@ Lange Rede, kurzer Sinn: Wie der Titel schon sagt werden wir in diesem Stream ve
         {
             id: "01oaf7tui5j4mdv9csuv1csjf5",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Uni Orga Q&amp;A (Prüfungen etc.)",
@@ -525,6 +564,7 @@ Lange Rede, kurzer Sinn: Wie der Titel schon sagt werden wir in diesem Stream ve
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201022T120000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -539,6 +579,7 @@ Livestream der Fachschaft
         {
             id: "472o6uf8jec53c73jcduuijfq8",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Talk: Worsch (GBI)",
@@ -550,6 +591,7 @@ Livestream der Fachschaft
         {
             id: "6e5rfe2i53b5no33cnenrccdns",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Live Musik",
@@ -561,6 +603,7 @@ Livestream der Fachschaft
         {
             id: "6qk4gesjaqbetjlug8ljs137qf",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Wohnen in Karlsruhe Q&amp;A",
@@ -572,6 +615,7 @@ Livestream der Fachschaft
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201023T120000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -586,6 +630,7 @@ Livestream der Fachschaft
         {
             id: "7rj5re9amuk30t6lfb3rjai7do",
             calendarId: "1",
+            bgColor: "#7986cb",
 
             category: "time",
             title: "LA mit Benedikt",
@@ -600,6 +645,7 @@ Mit Benedikt eurem Lieblings LA Tutor.`,
         {
             id: "3ue8qrkagaiamambus6o30ip8u",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Cocktails Machen &amp; Konsumieren",
@@ -611,6 +657,7 @@ Mit Benedikt eurem Lieblings LA Tutor.`,
         {
             id: "6ijo0rdqr5jlg85rhi4knm5f7n",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "24h Stream",
@@ -622,6 +669,7 @@ Mit Benedikt eurem Lieblings LA Tutor.`,
         {
             id: "3kohd5jjkq6op18uoqo5lo8s4o",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Katerfrühstück",
@@ -633,6 +681,7 @@ Mit Benedikt eurem Lieblings LA Tutor.`,
         {
             id: "7hsqtoh9igcrjai8ai2r1r92io",
             calendarId: "1",
+            bgColor: "#7986cb",
 
             category: "time",
             title: "Frühstücksstream mit Adrian (AStA)",
@@ -647,6 +696,7 @@ Immer gut gekleidet und mit einem Lächeln, das tauglich ist euch alles zu verka
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201026T130000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -661,6 +711,7 @@ Livestream der Fachschaft
         {
             id: "48jiltme7k621vdqrgj5lf8edr",
             calendarId: "1",
+            bgColor: "#7986cb",
 
             category: "time",
             title: "Talk &amp; Chill: Leonid (Maddhe)",
@@ -672,6 +723,7 @@ Livestream der Fachschaft
         {
             id: "2sgvom88nukqj7akhj5aoqjjce",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Live Shader Programming",
@@ -683,6 +735,7 @@ Livestream der Fachschaft
         {
             id: "262aneh52v181634vqkref8shj",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Talk: Sauer (Online Lehre / Mathe)",
@@ -694,6 +747,7 @@ Livestream der Fachschaft
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201027T130000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -708,6 +762,7 @@ Livestream der Fachschaft
         {
             id: "35knuubk3lajj79kpjemlains0",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Kochen in 3 Schwierigkeitsstufen",
@@ -719,6 +774,7 @@ Livestream der Fachschaft
         {
             id: "09om7sgnvhblj1u2qiqhn6a2vp",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Was ist Fachschaft?",
@@ -730,6 +786,7 @@ Livestream der Fachschaft
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201028T130000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -744,6 +801,7 @@ Livestream der Fachschaft
         {
             id: "1uk25ctth0a266e99hcs8mgter",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Leben in Karlsruhe",
@@ -755,6 +813,7 @@ Livestream der Fachschaft
         {
             id: "1ie1en9oh289o1t2e0a7de7rh4",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Talk: Tichy",
@@ -773,6 +832,7 @@ Diese Ereignis wird auch über den Kanal der Fachschaft übertragen.`,
         {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201029T130000Z",
             calendarId: "1",
+            bgColor: "#616161",
 
             category: "time",
             title: "FBI (FS)",
@@ -787,6 +847,7 @@ Livestream der Fachschaft
         {
             id: "5bv1h1io32m9uh1ec3rulhhll2",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "r/KaIT Browsen &amp; Unsinn",
@@ -798,6 +859,7 @@ Livestream der Fachschaft
         {
             id: "0tefgs0gc0jffth1104jns89b9",
             calendarId: "1",
+            bgColor: "#0297df",
 
             category: "time",
             title: "Reste Q&amp;A",
@@ -809,6 +871,7 @@ Livestream der Fachschaft
         {
             id: "0eaiq87d5fbivqjaem4re1vhpt",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Behind the Scenes",
@@ -820,6 +883,7 @@ Livestream der Fachschaft
         {
             id: "71vob33rfmp26dpqslvleq7i5f",
             calendarId: "1",
+            bgColor: "#8e24aa",
 
             category: "time",
             title: "Cocktails Machen &amp; Konsumieren",
