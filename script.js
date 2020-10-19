@@ -10,7 +10,7 @@ var calOptions = {
         startDayOfWeek: 1,
         daynames: ["sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"],
         hourStart: 10,
-        hourEnd: 22,
+        hourEnd: 24,
         timezones: [{
             timezoneOffset: null,
             displayLabel: "Zeitzone Browser",
