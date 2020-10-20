@@ -85,6 +85,23 @@ Gemütlich!
         },
     
         {
+            id: "2psn83p110vepa89crbv6boer0",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Einführung Programmiersprachen (FS)",
+            body: `
+Kurzguide zu Programmiersprachen im (Info-)Studium
+Java, C, Haskell und Konsorten
+Viele sinnvolle und einige unnütze Fakten 
+ //ignore
+`,
+            start: "2020-10-20T20:00:00+02:00",
+            end: "2020-10-20T21:00:00+02:00"
+        },
+    
+        {
             id: "38jpv262qraegpbbsnlg2uecpn",
             calendarId: "1",
             bgColor: "#0297df",
@@ -124,6 +141,30 @@ Lange Rede, kurzer Sinn: Wie der Titel schon sagt werden wir in diesem Stream ve
 `,
             start: "2020-10-21T16:00:00+02:00",
             end: "2020-10-21T19:00:00+02:00"
+        },
+    
+        {
+            id: "7419ba81bo8co7j7cbascikskm",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Ankündigung O-Rallye (FS)",
+            body: ``,
+            start: "2020-10-21T16:00:00+02:00",
+            end: "2020-10-21T16:30:00+02:00"
+        },
+    
+        {
+            id: "3dggm78jadhatac7h2283nghna",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Vorstellung PSE-Projekte (FS)",
+            body: ``,
+            start: "2020-10-21T18:00:00+02:00",
+            end: "2020-10-21T19:30:00+02:00"
         },
     
         {
@@ -168,6 +209,19 @@ Livestream der Fachschaft
         },
     
         {
+            id: "459hf5n7qru8aknk8tc77io28b",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Fachschaftsstream",
+            body: `Allgemeiner Talk zum Studium
+`,
+            start: "2020-10-22T20:00:00+02:00",
+            end: "2020-10-22T22:00:00+02:00"
+        },
+    
+        {
             id: "6e5rfe2i53b5no33cnenrccdns",
             calendarId: "1",
             bgColor: "#8e24aa",
@@ -209,6 +263,18 @@ Livestream der Fachschaft
         },
     
         {
+            id: "27o688jpj17vm3spgvrap8tucf",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Hacky Hour (FS)",
+            body: ``,
+            start: "2020-10-23T16:00:00+02:00",
+            end: "2020-10-23T18:00:00+02:00"
+        },
+    
+        {
             id: "7rj5re9amuk30t6lfb3rjai7do",
             calendarId: "1",
             bgColor: "#7986cb",
@@ -222,6 +288,18 @@ Mit Benedikt eurem Lieblings LA Tutor.
 `,
             start: "2020-10-23T16:00:00+02:00",
             end: "2020-10-23T17:30:00+02:00"
+        },
+    
+        {
+            id: "14ncn8k895bhio0582t0etk22t",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Nachruf für den Kleingruppen-Zuteilungsalgorithmus (FS)",
+            body: ``,
+            start: "2020-10-23T18:00:00+02:00",
+            end: "2020-10-23T20:00:00+02:00"
         },
     
         {
@@ -248,6 +326,18 @@ Mit Benedikt eurem Lieblings LA Tutor.
 `,
             start: "2020-10-24T12:00:00+02:00",
             end: "2020-10-25T11:59:00+01:00"
+        },
+    
+        {
+            id: "3j3k0ih80mcmt74sedtc6ph7su",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Sandwich-Toasten nach Einsendungen (FS)",
+            body: ``,
+            start: "2020-10-24T18:00:00+02:00",
+            end: "2020-10-24T20:00:00+02:00"
         },
     
         {
@@ -477,6 +567,18 @@ Livestream der Fachschaft
         },
     
         {
+            id: "2upuqkeik1ao4t78k1dt08kfe4",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Abschlussveranstaltung (FS)",
+            body: ``,
+            start: "2020-10-30T14:00:00+01:00",
+            end: "2020-10-30T15:00:00+01:00"
+        },
+    
+        {
             id: "71vob33rfmp26dpqslvleq7i5f",
             calendarId: "1",
             bgColor: "#8e24aa",
@@ -536,6 +638,23 @@ Gemütlich!
         },
     
         {
+            id: "2psn83p110vepa89crbv6boer0",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Einführung Programmiersprachen (FS)",
+            body: `
+Kurzguide zu Programmiersprachen im (Info-)Studium
+Java, C, Haskell und Konsorten
+Viele sinnvolle und einige unnütze Fakten 
+ //ignore
+`,
+            start: "2020-10-20T20:00:00+02:00",
+            end: "2020-10-20T21:00:00+02:00"
+        },
+    
+        {
             id: "38jpv262qraegpbbsnlg2uecpn",
             calendarId: "1",
             bgColor: "#0297df",
@@ -575,6 +694,30 @@ Lange Rede, kurzer Sinn: Wie der Titel schon sagt werden wir in diesem Stream ve
 `,
             start: "2020-10-21T16:00:00+02:00",
             end: "2020-10-21T19:00:00+02:00"
+        },
+    
+        {
+            id: "7419ba81bo8co7j7cbascikskm",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Ankündigung O-Rallye (FS)",
+            body: ``,
+            start: "2020-10-21T16:00:00+02:00",
+            end: "2020-10-21T16:30:00+02:00"
+        },
+    
+        {
+            id: "3dggm78jadhatac7h2283nghna",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Vorstellung PSE-Projekte (FS)",
+            body: ``,
+            start: "2020-10-21T18:00:00+02:00",
+            end: "2020-10-21T19:30:00+02:00"
         },
     
         {
@@ -619,6 +762,19 @@ Livestream der Fachschaft
         },
     
         {
+            id: "459hf5n7qru8aknk8tc77io28b",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Fachschaftsstream",
+            body: `Allgemeiner Talk zum Studium
+`,
+            start: "2020-10-22T20:00:00+02:00",
+            end: "2020-10-22T22:00:00+02:00"
+        },
+    
+        {
             id: "6e5rfe2i53b5no33cnenrccdns",
             calendarId: "1",
             bgColor: "#8e24aa",
@@ -660,6 +816,18 @@ Livestream der Fachschaft
         },
     
         {
+            id: "27o688jpj17vm3spgvrap8tucf",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Hacky Hour (FS)",
+            body: ``,
+            start: "2020-10-23T16:00:00+02:00",
+            end: "2020-10-23T18:00:00+02:00"
+        },
+    
+        {
             id: "7rj5re9amuk30t6lfb3rjai7do",
             calendarId: "1",
             bgColor: "#7986cb",
@@ -673,6 +841,18 @@ Mit Benedikt eurem Lieblings LA Tutor.
 `,
             start: "2020-10-23T16:00:00+02:00",
             end: "2020-10-23T17:30:00+02:00"
+        },
+    
+        {
+            id: "14ncn8k895bhio0582t0etk22t",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Nachruf für den Kleingruppen-Zuteilungsalgorithmus (FS)",
+            body: ``,
+            start: "2020-10-23T18:00:00+02:00",
+            end: "2020-10-23T20:00:00+02:00"
         },
     
         {
@@ -699,6 +879,18 @@ Mit Benedikt eurem Lieblings LA Tutor.
 `,
             start: "2020-10-24T12:00:00+02:00",
             end: "2020-10-25T11:59:00+01:00"
+        },
+    
+        {
+            id: "3j3k0ih80mcmt74sedtc6ph7su",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Sandwich-Toasten nach Einsendungen (FS)",
+            body: ``,
+            start: "2020-10-24T18:00:00+02:00",
+            end: "2020-10-24T20:00:00+02:00"
         },
     
         {
@@ -923,6 +1115,18 @@ Livestream der Fachschaft
             title: "Behind the Scenes",
             body: `Wenn wir schon alles an Technik was wir in die Finger bekommen konnten zusammengekarrt haben, dann wollen wir euch das auch zeigen!
 `,
+            start: "2020-10-30T14:00:00+01:00",
+            end: "2020-10-30T15:00:00+01:00"
+        },
+    
+        {
+            id: "2upuqkeik1ao4t78k1dt08kfe4",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Abschlussveranstaltung (FS)",
+            body: ``,
             start: "2020-10-30T14:00:00+01:00",
             end: "2020-10-30T15:00:00+01:00"
         },
