@@ -185,7 +185,7 @@ Viele sinnvolle und einige unnütze Fakten
                 
             },
             start: "2020-10-21T10:00:00+02:00",
-            end: "2020-10-21T11:00:00+02:00"
+            end: "2020-10-21T12:00:00+02:00"
         },
     
         {
@@ -238,6 +238,8 @@ Livestream der Fachschaft
 Lange Rede, kurzer Sinn: Wie der Titel schon sagt werden wir in diesem Stream versuchen (!) Lasagne zu kochen.`,
             raw: {
                 ignore: false,
+                
+                    location: "https://youtu.be/IZ0I452orLY"
                 
             },
             start: "2020-10-21T17:00:00+02:00",
@@ -293,7 +295,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
                 
             },
             start: "2020-10-22T10:00:00+02:00",
-            end: "2020-10-22T11:00:00+02:00"
+            end: "2020-10-22T12:00:00+02:00"
         },
     
         {
@@ -399,7 +401,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
                 
             },
             start: "2020-10-23T10:00:00+02:00",
-            end: "2020-10-23T11:00:00+02:00"
+            end: "2020-10-23T11:30:00+02:00"
         },
     
         {
@@ -611,7 +613,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
                 
             },
             start: "2020-10-26T10:00:00+01:00",
-            end: "2020-10-26T11:30:00+01:00"
+            end: "2020-10-26T12:00:00+01:00"
         },
     
         {
@@ -918,7 +920,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
                 
             },
             start: "2020-10-30T10:00:00+01:00",
-            end: "2020-10-30T11:00:00+01:00"
+            end: "2020-10-30T11:15:00+01:00"
         },
     
         {
@@ -1071,7 +1073,7 @@ Viele sinnvolle und einige unnütze Fakten
                 ignore: false
             },
             start: "2020-10-21T10:00:00+02:00",
-            end: "2020-10-21T11:00:00+02:00"
+            end: "2020-10-21T12:00:00+02:00"
         },
     
         {
@@ -1167,7 +1169,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
                 ignore: false
             },
             start: "2020-10-22T10:00:00+02:00",
-            end: "2020-10-22T11:00:00+02:00"
+            end: "2020-10-22T12:00:00+02:00"
         },
     
         {
@@ -1263,7 +1265,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
                 ignore: false
             },
             start: "2020-10-23T10:00:00+02:00",
-            end: "2020-10-23T11:00:00+02:00"
+            end: "2020-10-23T11:30:00+02:00"
         },
     
         {
@@ -1455,7 +1457,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
                 ignore: false
             },
             start: "2020-10-26T10:00:00+01:00",
-            end: "2020-10-26T11:30:00+01:00"
+            end: "2020-10-26T12:00:00+01:00"
         },
     
         {
@@ -1737,7 +1739,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
                 ignore: false
             },
             start: "2020-10-30T10:00:00+01:00",
-            end: "2020-10-30T11:00:00+01:00"
+            end: "2020-10-30T11:15:00+01:00"
         },
     
         {
