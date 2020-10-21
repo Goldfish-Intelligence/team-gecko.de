@@ -247,24 +247,6 @@ Lange Rede, kurzer Sinn: Wie der Titel schon sagt werden wir in diesem Stream ve
         },
     
         {
-            id: "3dggm78jadhatac7h2283nghna",
-            calendarId: "1",
-            bgColor: "#616161",
-
-            category: "time",
-            title: "Vorstellung PSE-Projekte (FS)",
-            body: ``,
-            raw: {
-                ignore: true,
-                
-                    location: "https://o-phase.live/"
-                
-            },
-            start: "2020-10-21T18:00:00+02:00",
-            end: "2020-10-21T19:30:00+02:00"
-        },
-    
-        {
             id: "1bmevafn713o08c7hug7jof6h9_20201021T180000Z",
             calendarId: "1",
             bgColor: "#7986cb",
@@ -280,6 +262,24 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             },
             start: "2020-10-21T20:00:00+02:00",
             end: "2020-10-21T21:00:00+02:00"
+        },
+    
+        {
+            id: "3dggm78jadhatac7h2283nghna",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Vorstellung PSE-Projekte (FS)",
+            body: ``,
+            raw: {
+                ignore: true,
+                
+                    location: "https://o-phase.live/"
+                
+            },
+            start: "2020-10-21T20:00:00+02:00",
+            end: "2020-10-21T21:30:00+02:00"
         },
     
         {
@@ -1126,21 +1126,6 @@ Lange Rede, kurzer Sinn: Wie der Titel schon sagt werden wir in diesem Stream ve
         },
     
         {
-            id: "3dggm78jadhatac7h2283nghna",
-            calendarId: "1",
-            bgColor: "#616161",
-
-            category: "time",
-            title: "Vorstellung PSE-Projekte (FS)",
-            body: ``,
-            raw: {
-                ignore: true
-            },
-            start: "2020-10-21T18:00:00+02:00",
-            end: "2020-10-21T19:30:00+02:00"
-        },
-    
-        {
             id: "1bmevafn713o08c7hug7jof6h9_20201021T180000Z",
             calendarId: "1",
             bgColor: "#7986cb",
@@ -1155,6 +1140,21 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             },
             start: "2020-10-21T20:00:00+02:00",
             end: "2020-10-21T21:00:00+02:00"
+        },
+    
+        {
+            id: "3dggm78jadhatac7h2283nghna",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Vorstellung PSE-Projekte (FS)",
+            body: ``,
+            raw: {
+                ignore: true
+            },
+            start: "2020-10-21T20:00:00+02:00",
+            end: "2020-10-21T21:30:00+02:00"
         },
     
         {
