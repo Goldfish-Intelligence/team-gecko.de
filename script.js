@@ -163,7 +163,7 @@ Viele sinnvolle und einige unnütze Fakten
             raw: {
                 ignore: true,
                 
-                    location: "https://o-phase.live/"
+                    location: "https://o-phase.com/blob/ws2021/ophase-1603214880_2020-10-20.mp4"
                 
             },
             start: "2020-10-20T20:00:00+02:00",
@@ -293,6 +293,8 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/P6EKiWgG-UA"
+                
             },
             start: "2020-10-22T10:00:00+02:00",
             end: "2020-10-22T12:00:00+02:00"
@@ -331,8 +333,8 @@ Livestream der Fachschaft
                 ignore: false,
                 
             },
-            start: "2020-10-22T16:00:00+02:00",
-            end: "2020-10-22T18:00:00+02:00"
+            start: "2020-10-22T16:05:00+02:00",
+            end: "2020-10-22T18:05:00+02:00"
         },
     
         {
@@ -450,16 +452,17 @@ Livestream der Fachschaft
 
             category: "time",
             title: "LA mit Benedikt",
-            body: `
-Das etwas andere (Spassige) Tutorium.
+            body: `Das etwas andere (Spassige) Tutorium.
 
-Mit Benedikt eurem Lieblings LA Tutor.`,
+
+Mit Benedikt eurem Lieblings LA Tutor.
+Content der sowohl Spaß macht als auch informativ ist und nicht einfach nur erklärt sondern auch "Feeling" vermittelt.`,
             raw: {
                 ignore: false,
                 
             },
             start: "2020-10-23T16:00:00+02:00",
-            end: "2020-10-23T17:30:00+02:00"
+            end: "2020-10-23T18:00:00+02:00"
         },
     
         {
@@ -1201,8 +1204,8 @@ Livestream der Fachschaft
             raw: {
                 ignore: false
             },
-            start: "2020-10-22T16:00:00+02:00",
-            end: "2020-10-22T18:00:00+02:00"
+            start: "2020-10-22T16:05:00+02:00",
+            end: "2020-10-22T18:05:00+02:00"
         },
     
         {
@@ -1308,15 +1311,16 @@ Livestream der Fachschaft
 
             category: "time",
             title: "LA mit Benedikt",
-            body: `
-Das etwas andere (Spassige) Tutorium.
+            body: `Das etwas andere (Spassige) Tutorium.
 
-Mit Benedikt eurem Lieblings LA Tutor.`,
+
+Mit Benedikt eurem Lieblings LA Tutor.
+Content der sowohl Spaß macht als auch informativ ist und nicht einfach nur erklärt sondern auch "Feeling" vermittelt.`,
             raw: {
                 ignore: false
             },
             start: "2020-10-23T16:00:00+02:00",
-            end: "2020-10-23T17:30:00+02:00"
+            end: "2020-10-23T18:00:00+02:00"
         },
     
         {
