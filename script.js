@@ -333,7 +333,7 @@ Livestream der Fachschaft
                 ignore: false,
                 
             },
-            start: "2020-10-22T16:05:00+02:00",
+            start: "2020-10-22T16:00:00+02:00",
             end: "2020-10-22T18:05:00+02:00"
         },
     
@@ -1204,7 +1204,7 @@ Livestream der Fachschaft
             raw: {
                 ignore: false
             },
-            start: "2020-10-22T16:05:00+02:00",
+            start: "2020-10-22T16:00:00+02:00",
             end: "2020-10-22T18:05:00+02:00"
         },
     
