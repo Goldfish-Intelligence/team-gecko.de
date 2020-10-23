@@ -332,6 +332,8 @@ Livestream der Fachschaft
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/1gA0aLOpOaI"
+                
             },
             start: "2020-10-22T16:05:00+02:00",
             end: "2020-10-22T18:05:00+02:00"
