@@ -220,7 +220,7 @@ Livestream der Fachschaft
             raw: {
                 ignore: true,
                 
-                    location: "https://o-phase.live/"
+                    location: "https://www.youtube.com/watch?v=-mf-xqXUcas"
                 
             },
             start: "2020-10-21T16:00:00+02:00",
@@ -516,11 +516,13 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
 
             category: "time",
             title: "Cocktails Machen &amp; Konsumieren",
-            body: `Lust die Basics im Cocktails machen zu lernen? Aber keinen Bock sich selber zu blamieren. Dann schau zu wie das andere für euch machen. (Oder auch: Im Keller ist ein Haufen Alk vom letzten O-Phasen Cocktail Abend der weg muss.)`,
+            body: `
+Lust die Basics im Cocktails machen zu lernen? Aber keinen Bock sich selber zu blamieren. Dann schau zu wie das andere für euch machen. (Oder auch: Im Keller ist ein Haufen Alk vom letzten O-Phasen Cocktail Abend der weg muss.)
+`,
             raw: {
-                ignore: false,
+                ignore: true,
                 
-                    location: "https://youtu.be/ppKOBqGW_vc"
+                    location: "https://youtu.be/SlkPjG8zAqY"
                 
             },
             start: "2020-10-23T20:00:00+02:00",
@@ -533,7 +535,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             bgColor: "#8e24aa",
 
             category: "time",
-            title: "24h Stream",
+            title: "24+1h Stream",
             body: `Ja guckt nicht mich an! Ich schreibe hier nur die Texte zusammen. Scheinbar meinen ein paar Tutoren sich 24 Stunden für euch vor der Kamera zum Affen zu machen. Vorausgesetzt zwischendurch kippt niemand um oder eine Schicht Tutoren taucht nicht auf, passiert hier wohl allerlei. Wir spielen Spiele, reden frei über was uns im Bezug auf Uni durch den Kopf geht oder holen euch auch mal per Voice Chat in den Stream rein (Mama ich bin im Fernsehen!)`,
             raw: {
                 ignore: false,
@@ -1372,9 +1374,11 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
 
             category: "time",
             title: "Cocktails Machen &amp; Konsumieren",
-            body: `Lust die Basics im Cocktails machen zu lernen? Aber keinen Bock sich selber zu blamieren. Dann schau zu wie das andere für euch machen. (Oder auch: Im Keller ist ein Haufen Alk vom letzten O-Phasen Cocktail Abend der weg muss.)`,
+            body: `
+Lust die Basics im Cocktails machen zu lernen? Aber keinen Bock sich selber zu blamieren. Dann schau zu wie das andere für euch machen. (Oder auch: Im Keller ist ein Haufen Alk vom letzten O-Phasen Cocktail Abend der weg muss.)
+`,
             raw: {
-                ignore: false
+                ignore: true
             },
             start: "2020-10-23T20:00:00+02:00",
             end: "2020-10-24T00:00:00+02:00"
@@ -1386,7 +1390,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             bgColor: "#8e24aa",
 
             category: "time",
-            title: "24h Stream",
+            title: "24+1h Stream",
             body: `Ja guckt nicht mich an! Ich schreibe hier nur die Texte zusammen. Scheinbar meinen ein paar Tutoren sich 24 Stunden für euch vor der Kamera zum Affen zu machen. Vorausgesetzt zwischendurch kippt niemand um oder eine Schicht Tutoren taucht nicht auf, passiert hier wohl allerlei. Wir spielen Spiele, reden frei über was uns im Bezug auf Uni durch den Kopf geht oder holen euch auch mal per Voice Chat in den Stream rein (Mama ich bin im Fernsehen!)`,
             raw: {
                 ignore: false
