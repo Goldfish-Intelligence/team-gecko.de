@@ -520,6 +520,8 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/ppKOBqGW_vc"
+                
             },
             start: "2020-10-23T20:00:00+02:00",
             end: "2020-10-24T00:00:00+02:00"
@@ -589,8 +591,8 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
                 ignore: false,
                 
             },
-            start: "2020-10-25T12:00:00+01:00",
-            end: "2020-10-25T13:30:00+01:00"
+            start: "2020-10-25T11:00:00+01:00",
+            end: "2020-10-25T12:30:00+01:00"
         },
     
         {
@@ -1436,8 +1438,8 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             raw: {
                 ignore: false
             },
-            start: "2020-10-25T12:00:00+01:00",
-            end: "2020-10-25T13:30:00+01:00"
+            start: "2020-10-25T11:00:00+01:00",
+            end: "2020-10-25T12:30:00+01:00"
         },
     
         {
