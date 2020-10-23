@@ -405,6 +405,8 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/3btF02ZEFp4"
+                
             },
             start: "2020-10-23T10:00:00+02:00",
             end: "2020-10-23T11:30:00+02:00"
@@ -463,6 +465,8 @@ Mit Benedikt eurem Lieblings LA Tutor.
 Content der sowohl Spaß macht als auch informativ ist und nicht einfach nur erklärt sondern auch "Feeling" vermittelt.`,
             raw: {
                 ignore: false,
+                
+                    location: "https://youtu.be/84yV6wvwhBw"
                 
             },
             start: "2020-10-23T16:00:00+02:00",
