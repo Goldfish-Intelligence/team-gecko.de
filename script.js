@@ -538,6 +538,8 @@ Lust die Basics im Cocktails machen zu lernen? Aber keinen Bock sich selber zu b
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/K94QbhXCerA"
+                
             },
             start: "2020-10-24T12:00:00+02:00",
             end: "2020-10-25T11:59:00+01:00"
