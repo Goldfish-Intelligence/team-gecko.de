@@ -275,8 +275,6 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             raw: {
                 ignore: true,
                 
-                    location: "https://o-phase.live/"
-                
             },
             start: "2020-10-21T20:00:00+02:00",
             end: "2020-10-21T21:30:00+02:00"
@@ -369,8 +367,6 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             raw: {
                 ignore: true,
                 
-                    location: "https://o-phase.live/"
-                
             },
             start: "2020-10-22T20:00:00+02:00",
             end: "2020-10-22T22:00:00+02:00"
@@ -444,8 +440,6 @@ Livestream der Fachschaft
             raw: {
                 ignore: true,
                 
-                    location: "https://o-phase.live/"
-                
             },
             start: "2020-10-23T16:00:00+02:00",
             end: "2020-10-23T18:00:00+02:00"
@@ -484,8 +478,6 @@ Content der sowohl Spaß macht als auch informativ ist und nicht einfach nur erk
             raw: {
                 ignore: true,
                 
-                    location: "https://o-phase.live/"
-                
             },
             start: "2020-10-23T18:00:00+02:00",
             end: "2020-10-23T20:00:00+02:00"
@@ -517,10 +509,11 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             category: "time",
             title: "Cocktails Machen &amp; Konsumieren",
             body: `
-Lust die Basics im Cocktails machen zu lernen? Aber keinen Bock sich selber zu blamieren. Dann schau zu wie das andere für euch machen. (Oder auch: Im Keller ist ein Haufen Alk vom letzten O-Phasen Cocktail Abend der weg muss.)
-`,
+Lust die Basics im Cocktails machen zu lernen? Aber keinen Bock sich selber zu blamieren. Dann schau zu wie das andere für euch machen. (Oder auch: Im Keller ist ein Haufen Alk vom letzten O-Phasen Cocktail Abend der weg muss.)`,
             raw: {
-                ignore: true,
+                ignore: false,
+                
+                    location: "https://youtu.be/SlkPjG8zAqY"
                 
             },
             start: "2020-10-23T20:00:00+02:00",
@@ -556,8 +549,6 @@ Lust die Basics im Cocktails machen zu lernen? Aber keinen Bock sich selber zu b
             raw: {
                 ignore: true,
                 
-                    location: "https://o-phase.live/"
-                
             },
             start: "2020-10-24T18:00:00+02:00",
             end: "2020-10-24T20:00:00+02:00"
@@ -582,6 +573,24 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
         },
     
         {
+            id: "2ucvr78vfe8i42dm9m98de055i",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Interaktiver Gaming-Stream (FS)",
+            body: `
+SuperTuxKart
+`,
+            raw: {
+                ignore: true,
+                
+            },
+            start: "2020-10-24T21:00:00+02:00",
+            end: "2020-10-24T23:00:00+02:00"
+        },
+    
+        {
             id: "3kohd5jjkq6op18uoqo5lo8s4o",
             calendarId: "1",
             bgColor: "#8e24aa",
@@ -593,8 +602,8 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
                 ignore: false,
                 
             },
-            start: "2020-10-25T11:00:00+01:00",
-            end: "2020-10-25T12:30:00+01:00"
+            start: "2020-10-25T10:30:00+01:00",
+            end: "2020-10-25T12:00:00+01:00"
         },
     
         {
@@ -952,24 +961,6 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             },
             start: "2020-10-30T11:45:00+01:00",
             end: "2020-10-30T12:45:00+01:00"
-        },
-    
-        {
-            id: "2upuqkeik1ao4t78k1dt08kfe4",
-            calendarId: "1",
-            bgColor: "#616161",
-
-            category: "time",
-            title: "Abschlussveranstaltung (FS)",
-            body: ``,
-            raw: {
-                ignore: true,
-                
-                    location: "https://o-phase.live/"
-                
-            },
-            start: "2020-10-30T14:00:00+01:00",
-            end: "2020-10-30T15:00:00+01:00"
         },
     
 ])
@@ -1375,10 +1366,9 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             category: "time",
             title: "Cocktails Machen &amp; Konsumieren",
             body: `
-Lust die Basics im Cocktails machen zu lernen? Aber keinen Bock sich selber zu blamieren. Dann schau zu wie das andere für euch machen. (Oder auch: Im Keller ist ein Haufen Alk vom letzten O-Phasen Cocktail Abend der weg muss.)
-`,
+Lust die Basics im Cocktails machen zu lernen? Aber keinen Bock sich selber zu blamieren. Dann schau zu wie das andere für euch machen. (Oder auch: Im Keller ist ein Haufen Alk vom letzten O-Phasen Cocktail Abend der weg muss.)`,
             raw: {
-                ignore: true
+                ignore: false
             },
             start: "2020-10-23T20:00:00+02:00",
             end: "2020-10-24T00:00:00+02:00"
@@ -1432,6 +1422,23 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
         },
     
         {
+            id: "2ucvr78vfe8i42dm9m98de055i",
+            calendarId: "1",
+            bgColor: "#616161",
+
+            category: "time",
+            title: "Interaktiver Gaming-Stream (FS)",
+            body: `
+SuperTuxKart
+`,
+            raw: {
+                ignore: true
+            },
+            start: "2020-10-24T21:00:00+02:00",
+            end: "2020-10-24T23:00:00+02:00"
+        },
+    
+        {
             id: "3kohd5jjkq6op18uoqo5lo8s4o",
             calendarId: "1",
             bgColor: "#8e24aa",
@@ -1442,8 +1449,8 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             raw: {
                 ignore: false
             },
-            start: "2020-10-25T11:00:00+01:00",
-            end: "2020-10-25T12:30:00+01:00"
+            start: "2020-10-25T10:30:00+01:00",
+            end: "2020-10-25T12:00:00+01:00"
         },
     
         {
@@ -1773,21 +1780,6 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             },
             start: "2020-10-30T11:45:00+01:00",
             end: "2020-10-30T12:45:00+01:00"
-        },
-    
-        {
-            id: "2upuqkeik1ao4t78k1dt08kfe4",
-            calendarId: "1",
-            bgColor: "#616161",
-
-            category: "time",
-            title: "Abschlussveranstaltung (FS)",
-            body: ``,
-            raw: {
-                ignore: true
-            },
-            start: "2020-10-30T14:00:00+01:00",
-            end: "2020-10-30T15:00:00+01:00"
         },
     
 ])
