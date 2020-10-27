@@ -672,6 +672,8 @@ Livestream der Fachschaft
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/6ctdu533Aqo"
+                
             },
             start: "2020-10-26T18:00:00+01:00",
             end: "2020-10-26T20:00:00+01:00"
@@ -702,7 +704,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
 
             category: "time",
             title: "Live Shader Programming",
-            body: `Nachdem ihr seine kreative Seite ja schon beim Musik machen erleben durftet, zeigt euch Robert dieses Mal seine Skills im Shader programmieren. OMG der Mann ist so vielseitig <3`,
+            body: `Nachdem ihr seine kreative Seite ja schon beim Musik machen erleben durftet, zeigt euch Robert dieses Mal seine Skills im Shader programmieren. OMG der Mann ist so vielseitig ❤️`,
             raw: {
                 ignore: false,
                 
@@ -1542,7 +1544,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
 
             category: "time",
             title: "Live Shader Programming",
-            body: `Nachdem ihr seine kreative Seite ja schon beim Musik machen erleben durftet, zeigt euch Robert dieses Mal seine Skills im Shader programmieren. OMG der Mann ist so vielseitig <3`,
+            body: `Nachdem ihr seine kreative Seite ja schon beim Musik machen erleben durftet, zeigt euch Robert dieses Mal seine Skills im Shader programmieren. OMG der Mann ist so vielseitig ❤️`,
             raw: {
                 ignore: false
             },
