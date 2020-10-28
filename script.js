@@ -890,7 +890,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             title: "Speeddating 2.0",
             body: `Beschreibung`,
             raw: {
-                ignore: false,
+                ignore: true,
                 
             },
             start: "2020-10-28T21:00:00+01:00",
@@ -916,8 +916,8 @@ Diese Ereignis wird auch über den Kanal der Fachschaft übertragen.`,
                 ignore: false,
                 
             },
-            start: "2020-10-29T11:20:00+01:00",
-            end: "2020-10-29T13:20:00+01:00"
+            start: "2020-10-29T11:30:00+01:00",
+            end: "2020-10-29T13:30:00+01:00"
         },
     
         {
@@ -1716,7 +1716,7 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             title: "Speeddating 2.0",
             body: `Beschreibung`,
             raw: {
-                ignore: false
+                ignore: true
             },
             start: "2020-10-28T21:00:00+01:00",
             end: "2020-10-28T22:00:00+01:00"
@@ -1740,8 +1740,8 @@ Diese Ereignis wird auch über den Kanal der Fachschaft übertragen.`,
             raw: {
                 ignore: false
             },
-            start: "2020-10-29T11:20:00+01:00",
-            end: "2020-10-29T13:20:00+01:00"
+            start: "2020-10-29T11:30:00+01:00",
+            end: "2020-10-29T13:30:00+01:00"
         },
     
         {
