@@ -708,6 +708,8 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/s_E90h_vsxI"
+                
             },
             start: "2020-10-26T21:00:00+01:00",
             end: "2020-10-26T22:30:00+01:00"
@@ -761,6 +763,8 @@ Livestream der Fachschaft
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/Q5kQXC-OGGE"
+                
             },
             start: "2020-10-27T19:00:00+01:00",
             end: "2020-10-27T22:00:00+01:00"
@@ -795,9 +799,29 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/d2liK-rGh5M"
+                
             },
             start: "2020-10-28T10:00:00+01:00",
             end: "2020-10-28T11:30:00+01:00"
+        },
+    
+        {
+            id: "4gfot9e9qipojvt0aa8ugoo6i9",
+            calendarId: "1",
+            bgColor: "#0297df",
+
+            category: "time",
+            title: "Reactions auf O-Ralley",
+            body: `Die O-Ralley ist vorbei! Nun können wir endlich offen über die Aufgaben reden. Wir schauen uns in diesem Stream eure Lösungen an.`,
+            raw: {
+                ignore: false,
+                
+                    location: "https://youtu.be/U6Wx5BAMYnw"
+                
+            },
+            start: "2020-10-28T13:00:00+01:00",
+            end: "2020-10-28T14:00:00+01:00"
         },
     
         {
@@ -856,6 +880,22 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
         },
     
         {
+            id: "1l254nh43ki57mc0m7r8b1j5e1",
+            calendarId: "1",
+            bgColor: "#0297df",
+
+            category: "time",
+            title: "Speeddating 2.0",
+            body: `Beschreibung`,
+            raw: {
+                ignore: false,
+                
+            },
+            start: "2020-10-28T21:00:00+01:00",
+            end: "2020-10-28T22:00:00+01:00"
+        },
+    
+        {
             id: "1ie1en9oh289o1t2e0a7de7rh4",
             calendarId: "1",
             bgColor: "#0297df",
@@ -900,6 +940,22 @@ Livestream der Fachschaft
         },
     
         {
+            id: "5cln176i6okq7or4hopaan5t1p",
+            calendarId: "1",
+            bgColor: "#0297df",
+
+            category: "time",
+            title: "Reactions auf O-Ralley",
+            body: `<span>Die O-Ralley ist vorbei! Nun können wir endlich offen über die Aufgaben reden. Wir schauen uns in diesem Stream eure Lösungen an.</span>`,
+            raw: {
+                ignore: false,
+                
+            },
+            start: "2020-10-29T16:00:00+01:00",
+            end: "2020-10-29T17:30:00+01:00"
+        },
+    
+        {
             id: "1bmevafn713o08c7hug7jof6h9_20201029T190000Z",
             calendarId: "1",
             bgColor: "#7986cb",
@@ -915,54 +971,6 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             },
             start: "2020-10-29T20:00:00+01:00",
             end: "2020-10-29T21:00:00+01:00"
-        },
-    
-        {
-            id: "5bv1h1io32m9uh1ec3rulhhll2",
-            calendarId: "1",
-            bgColor: "#8e24aa",
-
-            category: "time",
-            title: "r/KaIT Browsen &amp; Unsinn",
-            body: `Was wäre... nunja irgendetwas ohne Memes? Genau: voll doof. Weil Reddit eines der besten Mittel zum Prokrastinieren ist, stellen wir euch hier unter Anderem den KIT Subreddit vor.`,
-            raw: {
-                ignore: false,
-                
-            },
-            start: "2020-10-29T21:00:00+01:00",
-            end: "2020-10-29T22:00:00+01:00"
-        },
-    
-        {
-            id: "0tefgs0gc0jffth1104jns89b9",
-            calendarId: "1",
-            bgColor: "#0297df",
-
-            category: "time",
-            title: "Reste Q&amp;A",
-            body: `2 Wochen O-Phase sind vorbei. Letzte Fragen bevor das Studium los geht?`,
-            raw: {
-                ignore: false,
-                
-            },
-            start: "2020-10-30T10:00:00+01:00",
-            end: "2020-10-30T11:15:00+01:00"
-        },
-    
-        {
-            id: "0eaiq87d5fbivqjaem4re1vhpt",
-            calendarId: "1",
-            bgColor: "#8e24aa",
-
-            category: "time",
-            title: "Behind the Scenes",
-            body: `Wenn wir schon alles an Technik was wir in die Finger bekommen konnten zusammengekarrt haben, dann wollen wir euch das auch zeigen!`,
-            raw: {
-                ignore: false,
-                
-            },
-            start: "2020-10-30T11:45:00+01:00",
-            end: "2020-10-30T12:45:00+01:00"
         },
     
 ])
@@ -1633,6 +1641,21 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
         },
     
         {
+            id: "4gfot9e9qipojvt0aa8ugoo6i9",
+            calendarId: "1",
+            bgColor: "#0297df",
+
+            category: "time",
+            title: "Reactions auf O-Ralley",
+            body: `Die O-Ralley ist vorbei! Nun können wir endlich offen über die Aufgaben reden. Wir schauen uns in diesem Stream eure Lösungen an.`,
+            raw: {
+                ignore: false
+            },
+            start: "2020-10-28T13:00:00+01:00",
+            end: "2020-10-28T14:00:00+01:00"
+        },
+    
+        {
             id: "3f7hkr8pbso23fhm2dja15gjb0_20201028T130000Z",
             calendarId: "1",
             bgColor: "#616161",
@@ -1683,6 +1706,21 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
         },
     
         {
+            id: "1l254nh43ki57mc0m7r8b1j5e1",
+            calendarId: "1",
+            bgColor: "#0297df",
+
+            category: "time",
+            title: "Speeddating 2.0",
+            body: `Beschreibung`,
+            raw: {
+                ignore: false
+            },
+            start: "2020-10-28T21:00:00+01:00",
+            end: "2020-10-28T22:00:00+01:00"
+        },
+    
+        {
             id: "1ie1en9oh289o1t2e0a7de7rh4",
             calendarId: "1",
             bgColor: "#0297df",
@@ -1723,6 +1761,21 @@ Livestream der Fachschaft
         },
     
         {
+            id: "5cln176i6okq7or4hopaan5t1p",
+            calendarId: "1",
+            bgColor: "#0297df",
+
+            category: "time",
+            title: "Reactions auf O-Ralley",
+            body: `<span>Die O-Ralley ist vorbei! Nun können wir endlich offen über die Aufgaben reden. Wir schauen uns in diesem Stream eure Lösungen an.</span>`,
+            raw: {
+                ignore: false
+            },
+            start: "2020-10-29T16:00:00+01:00",
+            end: "2020-10-29T17:30:00+01:00"
+        },
+    
+        {
             id: "1bmevafn713o08c7hug7jof6h9_20201029T190000Z",
             calendarId: "1",
             bgColor: "#7986cb",
@@ -1737,51 +1790,6 @@ Es sind täglich von 20-21Uhr Tutoren im Hilfe/SOS Channel um euch eure Fragen z
             },
             start: "2020-10-29T20:00:00+01:00",
             end: "2020-10-29T21:00:00+01:00"
-        },
-    
-        {
-            id: "5bv1h1io32m9uh1ec3rulhhll2",
-            calendarId: "1",
-            bgColor: "#8e24aa",
-
-            category: "time",
-            title: "r/KaIT Browsen &amp; Unsinn",
-            body: `Was wäre... nunja irgendetwas ohne Memes? Genau: voll doof. Weil Reddit eines der besten Mittel zum Prokrastinieren ist, stellen wir euch hier unter Anderem den KIT Subreddit vor.`,
-            raw: {
-                ignore: false
-            },
-            start: "2020-10-29T21:00:00+01:00",
-            end: "2020-10-29T22:00:00+01:00"
-        },
-    
-        {
-            id: "0tefgs0gc0jffth1104jns89b9",
-            calendarId: "1",
-            bgColor: "#0297df",
-
-            category: "time",
-            title: "Reste Q&amp;A",
-            body: `2 Wochen O-Phase sind vorbei. Letzte Fragen bevor das Studium los geht?`,
-            raw: {
-                ignore: false
-            },
-            start: "2020-10-30T10:00:00+01:00",
-            end: "2020-10-30T11:15:00+01:00"
-        },
-    
-        {
-            id: "0eaiq87d5fbivqjaem4re1vhpt",
-            calendarId: "1",
-            bgColor: "#8e24aa",
-
-            category: "time",
-            title: "Behind the Scenes",
-            body: `Wenn wir schon alles an Technik was wir in die Finger bekommen konnten zusammengekarrt haben, dann wollen wir euch das auch zeigen!`,
-            raw: {
-                ignore: false
-            },
-            start: "2020-10-30T11:45:00+01:00",
-            end: "2020-10-30T12:45:00+01:00"
         },
     
 ])
