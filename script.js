@@ -940,22 +940,6 @@ Livestream der Fachschaft
         },
     
         {
-            id: "0tefgs0gc0jffth1104jns89b9",
-            calendarId: "1",
-            bgColor: "#0297df",
-
-            category: "time",
-            title: "Reste Q&amp;A",
-            body: `2 Wochen O-Phase sind vorbei. Letzte Fragen bevor das Studium los geht?`,
-            raw: {
-                ignore: false,
-                
-            },
-            start: "2020-10-30T10:00:00+01:00",
-            end: "2020-10-30T11:30:00+01:00"
-        },
-    
-        {
             id: "59de4h28q4jiqmvkgobg7gds3r",
             calendarId: "1",
             bgColor: "#616161",
@@ -971,22 +955,6 @@ Livestream der Fachschaft
             },
             start: "2020-10-30T10:00:00+01:00",
             end: "2020-10-30T11:30:00+01:00"
-        },
-    
-        {
-            id: "0eaiq87d5fbivqjaem4re1vhpt",
-            calendarId: "1",
-            bgColor: "#8e24aa",
-
-            category: "time",
-            title: "Behind the Scenes",
-            body: `Wenn wir schon alles an Technik was wir in die Finger bekommen konnten zusammengekarrt haben, dann wollen wir euch das auch zeigen!`,
-            raw: {
-                ignore: false,
-                
-            },
-            start: "2020-10-30T11:45:00+01:00",
-            end: "2020-10-30T12:45:00+01:00"
         },
     
         {
@@ -1008,6 +976,22 @@ Livestream der Fachschaft
             },
             start: "2020-10-30T14:00:00+01:00",
             end: "2020-10-30T16:00:00+01:00"
+        },
+    
+        {
+            id: "0eaiq87d5fbivqjaem4re1vhpt",
+            calendarId: "1",
+            bgColor: "#8e24aa",
+
+            category: "time",
+            title: "Abschlussveranstaltung  Geckos",
+            body: `Unser letzter Stream aber gewiss kein Abschied für immer!`,
+            raw: {
+                ignore: false,
+                
+            },
+            start: "2020-10-30T16:30:00+01:00",
+            end: "2020-10-30T17:30:00+01:00"
         },
     
         {
@@ -1916,22 +1900,6 @@ Livestream der Fachschaft
         },
     
         {
-            id: "0tefgs0gc0jffth1104jns89b9",
-            calendarId: "1",
-            bgColor: "#0297df",
-
-            category: "time",
-            title: "Reste Q&amp;A",
-            body: `2 Wochen O-Phase sind vorbei. Letzte Fragen bevor das Studium los geht?`,
-            raw: {
-                ignore: false,
-                
-            },
-            start: "2020-10-30T10:00:00+01:00",
-            end: "2020-10-30T11:30:00+01:00"
-        },
-    
-        {
             id: "59de4h28q4jiqmvkgobg7gds3r",
             calendarId: "1",
             bgColor: "#616161",
@@ -1947,22 +1915,6 @@ Livestream der Fachschaft
             },
             start: "2020-10-30T10:00:00+01:00",
             end: "2020-10-30T11:30:00+01:00"
-        },
-    
-        {
-            id: "0eaiq87d5fbivqjaem4re1vhpt",
-            calendarId: "1",
-            bgColor: "#8e24aa",
-
-            category: "time",
-            title: "Behind the Scenes",
-            body: `Wenn wir schon alles an Technik was wir in die Finger bekommen konnten zusammengekarrt haben, dann wollen wir euch das auch zeigen!`,
-            raw: {
-                ignore: false,
-                
-            },
-            start: "2020-10-30T11:45:00+01:00",
-            end: "2020-10-30T12:45:00+01:00"
         },
     
         {
@@ -1984,6 +1936,22 @@ Livestream der Fachschaft
             },
             start: "2020-10-30T14:00:00+01:00",
             end: "2020-10-30T16:00:00+01:00"
+        },
+    
+        {
+            id: "0eaiq87d5fbivqjaem4re1vhpt",
+            calendarId: "1",
+            bgColor: "#8e24aa",
+
+            category: "time",
+            title: "Abschlussveranstaltung  Geckos",
+            body: `Unser letzter Stream aber gewiss kein Abschied für immer!`,
+            raw: {
+                ignore: false,
+                
+            },
+            start: "2020-10-30T16:30:00+01:00",
+            end: "2020-10-30T17:30:00+01:00"
         },
     
         {
