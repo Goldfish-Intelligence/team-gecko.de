@@ -42,7 +42,7 @@ var calOptions = {
                 htmlResult += "<p class='event-ignore'>Kein YouTube Stream</p>"
             }
             if (schedule.raw.location) {
-                htmlResult += "<a href='" + schedule.raw.location + "'>Zum Livestream</a><br>"
+                htmlResult += "<a href='" + schedule.raw.location + "'>Zur Aufzeichnung</a><br>"
             }
             htmlResult += schedule.body;
 
@@ -898,6 +898,8 @@ Livestream der Fachschaft
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/je7CTi9nuxg"
+                
             },
             start: "2020-10-29T16:00:00+01:00",
             end: "2020-10-29T17:30:00+01:00"
@@ -988,6 +990,8 @@ Livestream der Fachschaft
             body: `Unser letzter Stream aber gewiss kein Abschied für immer!`,
             raw: {
                 ignore: false,
+                
+                    location: "https://youtu.be/xO2GHQJbvNQ"
                 
             },
             start: "2020-10-30T16:30:00+01:00",
@@ -1858,6 +1862,8 @@ Livestream der Fachschaft
             raw: {
                 ignore: false,
                 
+                    location: "https://youtu.be/je7CTi9nuxg"
+                
             },
             start: "2020-10-29T16:00:00+01:00",
             end: "2020-10-29T17:30:00+01:00"
@@ -1948,6 +1954,8 @@ Livestream der Fachschaft
             body: `Unser letzter Stream aber gewiss kein Abschied für immer!`,
             raw: {
                 ignore: false,
+                
+                    location: "https://youtu.be/xO2GHQJbvNQ"
                 
             },
             start: "2020-10-30T16:30:00+01:00",
