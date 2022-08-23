@@ -1,0 +1,45 @@
+$body-font-stack: 'Lato', sans-serif;
+$logo-font-stack: 'Skranji', sans-serif;
+$color-background: #161d21;
+$color-foreground: #ECEFF1;
+$color-accent: #7CB342;
+
+body {
+  background-color: $color-background;
+  color: $color-foreground;
+  font-family: $body-font-stack;
+  font-size: 1.2em;
+}
+
+strong, b, a {
+  color: $color-accent;
+}
+
+h1 {
+  margin: 1em;
+  color: $color-accent;
+  font-family: $logo-font-stack;
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  margin: 0.2em 0;
+  font-size: 2.5em;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $logo-font-stack;
+  font-weight: normal;
+}
+
+main {
+  max-width: 42em;
+  padding: 1em 4em;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+p {
+  margin: 1em 0;
+}
