@@ -30,7 +30,7 @@ a {
 
 h1 {
   box-sizing: border-box;
-  margin: 1em 0 0.4em;
+  margin: 1em 0 0.2em;
   color: $color-accent;
   font-family: $logo-font-stack;
   font-size: 4em;
@@ -75,7 +75,7 @@ h6 {
 main {
   max-width: 42em;
   padding: 1em 4em;
-  margin: auto auto 0 auto;
+  margin: 0.5em auto 0 auto;
   margin-bottom: 50px;
   font-size: 1.2em;
 }
@@ -84,4 +84,20 @@ p {
   margin: 1em 0;
   line-height: 1.4;
   text-align: justify;
+}
+
+#social {
+  text-align: center;
+  
+  > a {
+    display: inline-block;
+    overflow: visible;
+    width: 2em;
+    margin: 0 1em;
+    color: $color-foreground;
+
+    :hover {
+      text-decoration: none;
+    }
+  }
 }
