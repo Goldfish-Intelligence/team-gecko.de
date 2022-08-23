@@ -3,6 +3,7 @@ $logo-font-stack: "Skranji", sans-serif;
 $color-background: #161d21;
 $color-foreground: #eceff1;
 $color-accent: #7cb342;
+$color-highlight: #8BC34A;
 
 header {
   box-sizing: border-box;
@@ -20,6 +21,11 @@ body {
   color: $color-foreground;
   font-family: $body-font-stack;
   font-size: 1.2em;
+}
+
+::selection {
+  background-color: $color-highlight;
+  color: $color-background;
 }
 
 strong,
