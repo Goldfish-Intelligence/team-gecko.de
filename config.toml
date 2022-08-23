@@ -3,3 +3,6 @@ languageCode = 'de-de'
 disableKinds = ["taxonomy", "RSS", "term"]
 title = 'Team Gecko'
 theme = 'teamgecko'
+
+[markup.goldmark.renderer]
+unsafe = true
