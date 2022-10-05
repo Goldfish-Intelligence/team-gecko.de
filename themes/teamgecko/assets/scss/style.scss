@@ -150,19 +150,34 @@ main {
   }
 }
 
+@media screen and (max-width: $breakpoint-m) {
+  main {
+    padding: 1em 2em;
+  }
+}
+
+@media screen and (max-width: $breakpoint-s) {
+  main {
+    padding: 1em;
+  }
+}
+
 #social {
   text-align: center;
   user-select: none;
-  
+
   > a {
     display: inline-block;
     overflow: visible;
     width: 2em;
     margin: 0 1em;
     color: $color-foreground;
+    text-decoration: none;
+    transition: all $transition-duration ease-in-out;
 
-    :hover {
-      text-decoration: none;
+    &:hover {
+      color: $color-accent;
+      transform: scale(1.2);
     }
   }
 }
