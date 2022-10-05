@@ -8,6 +8,7 @@ $color-background: #161d21;
 $color-foreground: #eceff1;
 $color-accent: #7cb342;
 $color-highlight: #8BC34A;
+$transition-duration: 0.3s;
 
 header {
   box-sizing: border-box;
@@ -65,6 +66,16 @@ h6 {
   font-weight: normal;
 }
 
+hr {
+  border-color: color.adjust($color-accent, $saturation: 40%, $lightness: 40%);
+  margin: 2em 0 3em;
+  opacity: 0.5;
+}
+
+iframe {
+  margin: 1em 0;
+}
+
 #container {
   position: relative;
   width: 100%;
@@ -91,11 +102,15 @@ main {
   margin: 0.5em auto 0 auto;
   margin-bottom: 50px;
   font-size: 1.2em;
-  
+
   p {
     margin: 1em 0;
     line-height: 1.4;
     text-align: justify;
+
+    &.center {
+      text-align: center;
+    }
   }
 
   img, svg {
@@ -132,6 +147,23 @@ main {
   }
 }
 
+a.link-btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 0.1em solid $color-accent;
+  margin: 1.2em 0;
+  border-radius: 0.2em;
+  color: $color-accent;
+  text-align: center;
+  text-decoration: none;
+  transition: all $transition-duration ease-in-out;
+
+  &:hover {
+    background-color: $color-accent;
+    color: $color-background;
+  }
+}
+
 $timetable-columns: 6;
 $timetable-rows: 3;
 $timetable-children: (1 + $timetable-rows) * $timetable-columns;
@@ -141,7 +173,7 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
   left: -20%;
   display: grid;
   width: 140%;
-  margin: 2em 0;
+  margin: 5em 0;
   column-gap: 0.4em;
   grid-auto-flow: column;
   grid-template-columns: repeat($timetable-columns, 1fr);
@@ -182,9 +214,9 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
     align-content: stretch;
     align-items: stretch;
     justify-content: space-evenly;
+    padding-bottom: 1em;
     border: 0.2em solid transparent;
     transition: border-radius 0.5s ease-out;
-    padding-bottom: 1em;
 
     &:hover {
       transition-duration: 1s;
