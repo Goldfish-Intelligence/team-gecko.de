@@ -4,5 +4,9 @@ disableKinds = ["taxonomy", "RSS", "term"]
 title = 'Team Gecko'
 theme = 'teamgecko'
 
+[privacy]
+    [privacy.youtube]
+        privacyEnhanced = true
+
 [markup.goldmark.renderer]
 unsafe = true

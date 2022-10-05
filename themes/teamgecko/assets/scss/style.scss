@@ -99,9 +99,14 @@ main {
   }
 
   img, svg {
-    background-color: rgba($color-background, 0.8);
-    box-shadow: 0 0 0.8em 0.5em rgba($color-background, 0.8);
-  
+    &.inline-img {
+      display: inline-block;
+      max-height: 2em;
+      margin: 0 0.5em;
+      pointer-events: none;
+      vertical-align: middle;
+    }
+
     &.wide-img {
       position: relative;
       left: -20%;
@@ -109,7 +114,6 @@ main {
     }
   }
 }
-
 
 #social {
   text-align: center;
