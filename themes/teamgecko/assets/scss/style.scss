@@ -9,6 +9,10 @@ $color-foreground: #eceff1;
 $color-accent: #7cb342;
 $color-highlight: #8BC34A;
 $transition-duration: 0.3s;
+$breakpoint-xl: 1499px;
+$breakpoint-l: 1299px;
+$breakpoint-m: 999px;
+$breakpoint-s: 699px;
 
 header {
   box-sizing: border-box;
@@ -25,7 +29,7 @@ body {
   background-color: $color-background;
   color: $color-foreground;
   font-family: $body-font-stack;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 ::selection {
@@ -51,6 +55,16 @@ h1 {
 h2 {
   margin: 0.2em 0;
   font-size: 2.5em;
+}
+
+@media screen and (max-width: $breakpoint-s) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
 }
 
 h3 {
@@ -110,6 +124,12 @@ main {
 
     &.center {
       text-align: center;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-m) {
+    p {
+      font-size: 0.9em;
     }
   }
 
@@ -210,6 +230,7 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
   .timetable-slot {
     display: flex;
     overflow: hidden;
+    min-width: 8.5em;
     flex-direction: column;
     align-content: stretch;
     align-items: stretch;
@@ -292,5 +313,32 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
     line-height: 1em;
     text-align: center;
     word-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: $breakpoint-xl) {
+  .timetable {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: $breakpoint-l) {
+  .timetable {
+    left: -5%;
+    width: 110%;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: $breakpoint-m) {
+  .timetable {
+    position: static;
+    width: 100%;
+    padding-bottom: 1em;
+    overflow-x: scroll;
+
+    .timetable-time {
+      font-size: 1.1em;
+    }
   }
 }
