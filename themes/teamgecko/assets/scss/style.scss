@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "sass:list";
+@use "sass:math";
+
 $body-font-stack: "Lato", sans-serif;
 $logo-font-stack: "Skranji", sans-serif;
 $color-background: #161d21;
@@ -121,5 +125,136 @@ main {
     :hover {
       text-decoration: none;
     }
+  }
+}
+
+$timetable-columns: 6;
+$timetable-rows: 3;
+$timetable-children: (1 + $timetable-rows) * $timetable-columns;
+
+.timetable {
+  position: relative;
+  left: -20%;
+  display: grid;
+  width: 140%;
+  margin: 2em 0;
+  column-gap: 0.4em;
+  grid-auto-flow: column;
+  grid-template-columns: repeat($timetable-columns, 1fr);
+  grid-template-rows: 2em repeat($timetable-rows, 10em);
+  row-gap: 0.5em;
+
+  .timetable-header {
+    font-family: $logo-font-stack;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @for $i from 1 through $timetable-columns {
+    .timetable-header:nth-child(#{$i + ($i - 1) * $timetable-rows}) {
+      background: linear-gradient(to right,
+        color.mix(
+          color.adjust($color-accent, $saturation: 40%),
+          color.adjust($color-accent, $red: 120),
+          (1 - math.div($i - 1, $timetable-columns)) * 100%
+        ),
+        color.mix(
+          color.adjust($color-accent, $saturation: 40%),
+          color.adjust($color-accent, $red: 120),
+          (1 - math.div($i, $timetable-columns)) * 100%
+        )
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .timetable-slot {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: space-evenly;
+    border: 0.2em solid transparent;
+    transition: border-radius 0.5s ease-out;
+    padding-bottom: 1em;
+
+    &:hover {
+      transition-duration: 1s;
+    }
+  }
+
+  $first-radius-offset: 30;
+  $first-radius-limit: 30;
+  $second-radius-offset: 30;
+  $second-radius-limit: 20;
+  @for $i from 1 through $timetable-children {
+    $radii-1st: math.random($first-radius-limit) + $first-radius-offset * 1%
+                math.random($first-radius-limit) + $first-radius-offset * 1%
+                math.random($first-radius-limit) + $first-radius-offset * 1%
+                math.random($first-radius-limit) + $first-radius-offset * 1%;
+    $radii-2nd: math.random($second-radius-limit) + $second-radius-offset * 1%
+                math.random($second-radius-limit) + $second-radius-offset * 1%
+                math.random($second-radius-limit) + $second-radius-offset * 1%
+                math.random($second-radius-limit) + $second-radius-offset * 1%;
+    $radii-1st-wobbly: $radii-1st;
+    $radii-2nd-wobbly: $radii-1st;
+    @for $j from 1 through 4 {
+      $radii-1st-wobbly: list.set-nth($radii-1st-wobbly, $j, list.nth($radii-1st-wobbly, $j) * (1.2 - 0.5 * math.random()));
+      $radii-2nd-wobbly: list.set-nth($radii-2nd-wobbly, $j, list.nth($radii-2nd-wobbly, $j) * (1.2 - 0.5 * math.random()));
+    }
+
+    .timetable-slot:nth-child(#{$i}) {
+      background:
+      linear-gradient($color-background, $color-background) padding-box,
+      linear-gradient(to bottom right,
+          color.mix(
+            color.adjust($color-accent, $alpha: -0.5, $saturation: 40%),
+            color.adjust($color-accent, $alpha: -0.5, $red: 150),
+            (1 - math.div($i - 1, $timetable-children)) * 100%
+          ),
+          color.mix(
+            color.adjust($color-accent, $alpha: -0.5, $saturation: 40%),
+            color.adjust($color-accent, $alpha: -0.5, $red: 150),
+            (1 - math.div($i, $timetable-children)) * 100%
+          )
+        ) border-box;
+      border-radius: list.slash($radii-1st, $radii-2nd);
+
+      &:hover {
+        border-radius: list.slash($radii-1st-wobbly, $radii-2nd);
+      }
+    }
+  }
+
+  .timetable-entry {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1em 0.5em;
+  }
+
+  .timetable-time {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.5em;
+    color: $color-accent;
+    font-family: $logo-font-stack;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .timetable-content {
+    display: inline-block;
+    margin: 0.2em 0.5em;
+    line-height: 1em;
+    text-align: center;
+    word-wrap: break-word;
   }
 }
