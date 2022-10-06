@@ -2,7 +2,6 @@ baseURL = 'https://team-gecko.de/'
 languageCode = 'de-de'
 disableKinds = ["taxonomy", "RSS", "term"]
 title = 'Team Gecko'
-theme = 'teamgecko'
 
 [privacy]
     [privacy.youtube]
