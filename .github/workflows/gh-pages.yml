@@ -1,0 +1,40 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+      - name: node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - name: dependencies
+        run: |
+          mkdir -p ~/.local/bin
+          curl -Ls https://github.com/sass/dart-sass-embedded/releases/download/1.55.0/sass_embedded-1.55.0-linux-x64.tar.gz | tar -xz --strip-components 1 -C ~/.local/bin sass_embedded/dart-sass-embedded
+          npm ci
+      - name: build
+        run: hugo -v
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
