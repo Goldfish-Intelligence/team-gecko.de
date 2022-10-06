@@ -357,3 +357,44 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
     }
   }
 }
+
+.tutors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  row-gap: 3em;
+}
+
+.tutor {
+  figure {
+    width: 10em;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+      filter: sepia(0.7) hue-rotate(50deg);
+    }
+
+    figcaption {
+      h3 {
+        margin-top: 1em;
+        white-space: nowrap;
+      }
+
+      p {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-s) {
+  .tutors {
+    row-gap: 2em;
+  }
+}
+
+h2#tutorinnen {
+  margin-bottom: 1em;
+}
