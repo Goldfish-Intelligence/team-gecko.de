@@ -3,7 +3,7 @@
         <img src="{{ .Get "image" }}" alt="{{ .Get "name" }}" title="{{ .Get "name" }}">
         <figcaption>
             <h3>{{ .Get "name" }}</h3>
-            <p>{{ .Get "term" }}. Semester<br>{{ .Get "course" }}</p>
+            <p>{{ add (mul (sub now.Year (.Get "term")) 2) 1 }}. Semester<br>{{ .Get "course" }}</p>
         </figcaption>
     </figure>
 </div>
