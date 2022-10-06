@@ -216,6 +216,44 @@ a.link-btn {
   }
 }
 
+.archive {
+  width: 100%;
+  text-align: center;
+}
+
+.archive-entry {
+  width: 60%;
+  box-sizing: border-box;
+
+  .archive-title {
+    margin: 1em 0 0.4em;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .archive-subtitle {
+    margin: 0;
+  }
+
+  .archive-year {
+    font-family: $logo-font-stack;
+  }
+}
+
+@media screen and (max-width: $breakpoint-l) {
+  .archive-entry {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: $breakpoint-s) {
+  .archive-entry {
+    width: 100%;
+  }
+}
+
 $timetable-columns: 6;
 $timetable-rows: 3;
 $timetable-children: (1 + $timetable-rows) * $timetable-columns;
