@@ -7,10 +7,16 @@
                 <img src="img/gecko_background.svg">
             </div>
             {{- partial "header.html" . -}}
-            <main>
+            <main id="swup" class="transition-fade">
             {{- block "main" . }}{{- end }}
             </main>
             {{- partial "footer.html" . -}}
         </div>
+        <script>
+            document.documentElement.classList.remove('is-animating');
+            const swup = new Swup({
+                linkSelector: 'nav a'
+            });
+        </script>
     </body>
 </html>

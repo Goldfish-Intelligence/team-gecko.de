@@ -30,4 +30,9 @@
     {{ if isset .Page.Params "customhead" }}
     {{ .Page.Params.customhead | safeHTML }}
     {{ end }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.19/swup.min.js" integrity="sha512-LXgtFBdusH6FLwyEFVU+OoNTeaZ5d9Ze8HZE+Gx1QDk6PoSbQfCZYyrslbV8QASixYJm1TZlXlbqYaYDrKQGhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        document.documentElement.classList.add('is-animating');
+    </script>
 </head>

@@ -47,6 +47,17 @@ a {
   color: $color-accent;
 }
 
+.transition-fade {
+  opacity: 1;
+  transition: opacity $entrance-duration ease-in-out;
+
+  html.is-animating &,
+  html.is-leaving & {
+    opacity: 0;
+    transition-duration: 0.1s;
+  }
+}
+
 @keyframes bounceEntrance {
   0% {
     opacity: 0;
@@ -135,22 +146,11 @@ iframe {
   transform-origin: center;
 }
 
-@keyframes fadeEntrance {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 main {
   max-width: 42em;
   padding: 1em 4em;
   margin: 0.5em auto 0 auto;
   margin-bottom: 50px;
-  animation: fadeEntrance $entrance-duration ease;
   font-size: 1.2em;
 
   p {
@@ -231,8 +231,7 @@ main {
     text-decoration: none;
     transition: all $transition-duration ease-in-out;
 
-    &:hover,
-    &:focus {
+    &:hover {
       box-shadow: inset 10em 0 0 0 $color-accent;
       color: $color-background;
     }
