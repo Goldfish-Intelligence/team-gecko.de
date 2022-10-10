@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "stylelint": "^14.11.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-recommended-scss": "^7.0.0"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-recommended-scss",
+      "stylelint-config-idiomatic-order"
+    ]
+  }
+}
