@@ -381,12 +381,13 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
     font-family: $logo-font-stack;
     font-size: 1.2em;
     font-weight: bold;
+    line-height: 1em;
     text-align: center;
   }
 
   .timetable-content {
     display: inline-block;
-    margin: 0.2em 0.5em;
+    margin: 0 0.5em;
     line-height: 1em;
     text-align: center;
     word-wrap: break-word;
