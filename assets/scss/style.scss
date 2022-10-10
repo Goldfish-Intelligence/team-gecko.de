@@ -9,6 +9,7 @@ $color-foreground: #eceff1;
 $color-accent: #7cb342;
 $color-highlight: #8BC34A;
 $transition-duration: 0.3s;
+$entrance-duration: 0.8s;
 $breakpoint-xl: 1499px;
 $breakpoint-l: 1299px;
 $breakpoint-m: 999px;
@@ -38,14 +39,38 @@ body {
 }
 
 strong,
-b,
+b {
+  color: color.adjust($color-accent, $lightness: 10%);
+}
+
 a {
   color: $color-accent;
+}
+
+@keyframes bounceEntrance {
+  0% {
+    opacity: 0;
+    transform: scale3d(0, 0, 0);
+  }
+
+  40% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  
+  60% {
+    opacity: 1;
+    transform: scale3d(0.95, 0.95, 0.95);
+  }
+
+  100% {
+    transform: none;
+  }
 }
 
 h1 {
   box-sizing: border-box;
   margin: 1em 0 0.2em;
+  animation: bounceEntrance $entrance-duration ease;
   color: $color-accent;
   font-family: $logo-font-stack;
   font-size: 4em;
@@ -80,30 +105,6 @@ h6 {
   font-weight: normal;
 }
 
-nav {
-  margin: 0 1em 2em;
-  text-align: center;
-
-  a {
-    display: inline-block;
-    margin: 0 1em;
-    font-size: 1.4em;
-    font-weight: bold;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  @media screen and (max-width: $breakpoint-s) {
-    a {
-      font-size: 1.2em;
-      line-height: 2em;
-    }
-  }
-}
-
 hr {
   border-color: color.adjust($color-accent, $saturation: 40%, $lightness: 40%);
   margin: 2em 0 3em;
@@ -134,11 +135,22 @@ iframe {
   transform-origin: center;
 }
 
+@keyframes fadeEntrance {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 main {
   max-width: 42em;
   padding: 1em 4em;
   margin: 0.5em auto 0 auto;
   margin-bottom: 50px;
+  animation: fadeEntrance $entrance-duration ease;
   font-size: 1.2em;
 
   p {
@@ -148,6 +160,24 @@ main {
 
     &.center {
       text-align: center;
+    }
+
+    a {
+      background:
+      linear-gradient(to right, $color-accent, $color-accent),
+      linear-gradient(to right, color.adjust($color-accent, $saturation: 40%), color.adjust($color-accent, $red: 80));
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 0.1em, 0 0.1em;
+      color: $color-accent;
+      text-decoration: none;
+      transition: all $transition-duration ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-size: 0 0.1em, 100% 0.1em;
+        color: color.adjust($color-accent, $saturation: 30%);
+      }
     }
   }
 
@@ -186,22 +216,79 @@ main {
   }
 }
 
+.main-nav {
+  margin: 0 1em 2em;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    padding: 0.2em;
+    margin: 0 1em;
+    animation: bounceEntrance $entrance-duration ease-in-out;
+    box-shadow: inset 0 0 0 0 $color-accent;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all $transition-duration ease-in-out;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 10em 0 0 0 $color-accent;
+      color: $color-background;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-s) {
+    a {
+      font-size: 1.2em;
+      line-height: 2em;
+    }
+  }
+}
+
 #social {
   text-align: center;
   user-select: none;
 
   > a {
+    position: relative;
     display: inline-block;
     overflow: visible;
     width: 2em;
+    padding: 0.5em;
     margin: 0 1em;
+    animation: bounceEntrance $entrance-duration ease-in-out;
     color: $color-foreground;
     text-decoration: none;
     transition: all $transition-duration ease-in-out;
 
-    &:hover {
-      color: $color-accent;
-      transform: scale(1.2);
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background-color: $color-accent;
+      border-radius: 50%;
+      content: '';
+      transform: translate(-50%, -50%);
+      transition: all $transition-duration ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-background;
+    }
+
+    &:hover::before,
+    &:focus::before {
+      width: 100%;
+      height: 100%;
+    }
+
+    svg {
+      vertical-align: middle;
     }
   }
 }
@@ -211,13 +298,15 @@ a.link-btn {
   padding: 0.5em 1em;
   border: 0.1em solid $color-accent;
   margin: 1.2em 0;
+  background: none;
   border-radius: 0.2em;
   color: $color-accent;
   text-align: center;
   text-decoration: none;
   transition: all $transition-duration ease-in-out;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $color-accent;
     color: $color-background;
   }
@@ -331,7 +420,8 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
     border: 0.2em solid transparent;
     transition: border-radius 0.5s ease-out;
 
-    &:hover {
+    &:hover,
+    &:focus {
       transition-duration: 1s;
     }
   }
@@ -373,7 +463,8 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
         ) border-box;
       border-radius: list.slash($radii-1st, $radii-2nd);
 
-      &:hover {
+      &:hover,
+      &:focus {
         border-radius: list.slash($radii-1st-wobbly, $radii-2nd);
       }
     }
