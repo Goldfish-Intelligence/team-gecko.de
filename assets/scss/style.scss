@@ -261,6 +261,21 @@ a.link-btn {
   }
 }
 
+.youtube-embed {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-bottom: 3em;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 $timetable-columns: 6;
 $timetable-rows: 3;
 $timetable-children: (1 + $timetable-rows) * $timetable-columns;
