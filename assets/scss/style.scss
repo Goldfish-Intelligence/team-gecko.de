@@ -373,7 +373,7 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
   left: -20%;
   display: grid;
   width: 140%;
-  margin: 5em 0;
+  margin: 5em 0 2em;
   column-gap: 0.4em;
   grid-auto-flow: column;
   grid-template-columns: repeat($timetable-columns, 1fr);
