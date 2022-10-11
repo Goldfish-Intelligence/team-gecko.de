@@ -238,9 +238,9 @@ main {
   }
 
   @media screen and (max-width: $breakpoint-s) {
-    a {
+    .nav-link {
+      margin: 0 0.4em 0.4em;
       font-size: 1.2em;
-      line-height: 2em;
     }
   }
 }
