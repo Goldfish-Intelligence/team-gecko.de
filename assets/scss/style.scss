@@ -161,29 +161,29 @@ main {
     &.center {
       text-align: center;
     }
-
-    a {
-      background:
-      linear-gradient(to right, $color-accent, $color-accent),
-      linear-gradient(to right, color.adjust($color-accent, $saturation: 40%), color.adjust($color-accent, $red: 80));
-      background-position: 100% 100%, 0 100%;
-      background-repeat: no-repeat;
-      background-size: 100% 0.1em, 0 0.1em;
-      color: $color-accent;
-      text-decoration: none;
-      transition: all $transition-duration ease-in-out;
-
-      &:hover,
-      &:focus {
-        background-size: 0 0.1em, 100% 0.1em;
-        color: color.adjust($color-accent, $saturation: 30%);
-      }
-    }
   }
 
   @media screen and (max-width: $breakpoint-m) {
     p {
       font-size: 0.9em;
+    }
+  }
+
+  a {
+    background:
+    linear-gradient(to right, $color-accent, $color-accent),
+    linear-gradient(to right, color.adjust($color-accent, $saturation: 40%), color.adjust($color-accent, $red: 80));
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em, 0 0.1em;
+    color: $color-accent;
+    text-decoration: none;
+    transition: all $transition-duration ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-size: 0 0.1em, 100% 0.1em;
+      color: color.adjust($color-accent, $saturation: 30%);
     }
   }
 
