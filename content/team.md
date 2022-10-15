@@ -15,5 +15,11 @@ draft: false
 {{% tutors/tutor image="img/tutors/natalie.jpg" name="Natalie" term=2020 course="Mathematik B. Sc." %}}
 {{% tutors/tutor image="img/tutors/janik.jpg" name="Janik" term=2021 course="Informatik B. Sc." %}}
 {{% tutors/tutor image="img/tutors/moritz.jpg" name="Moritz" term=2019 course="Informatik B. Sc." %}}
+{{% tutors/tutor image="img/tutors/tim.jpg" name="Tim" term=2020 course="Informatik B. Sc." %}}
+{{% tutors/tutor image="img/tutors/benedikt.jpg" name="Benedikt" term=2022 course="Mathematik M. Sc.<br>Informatik M. Sc." %}}
+{{% tutors/tutor image="img/tutors/kornelius.jpg" name="Kornelius" term=2019 course="Informatik B. Sc." %}}
+{{% tutors/tutor image="img/tutors/sophie.jpg" name="Sophie" term=2021 course="Wirtschaftsmathematik B. Sc." %}}
+{{% tutors/tutor image="img/tutors/johannes.jpg" name="Johannes" term=2022 course="Mathematik M. Sc." %}}
+{{% tutors/tutor image="img/tutors/justin.jpg" name="Justin" term=2018 course="Informatik B. Sc." %}}
 {{% tutors/tutor image="img/tutors/walter_f_sticky.jpg" name="Walter F. Sticky" term=2021.5 course="Maskottchenwesen B. Sc." %}}
 {{% /tutors/container %}}
