@@ -139,10 +139,10 @@ iframe {
 #background {
   position: absolute;
   z-index: -1;
-  top: 20%;
-  right: -70%;
+  top: 30%;
+  right: -140%;
   pointer-events: none;
-  transform: translateZ(-20px) scale(1.4);
+  transform: translateZ(-50px) scale(2.5);
   transform-origin: center;
 }
 
