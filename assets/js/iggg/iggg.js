@@ -5,18 +5,22 @@ locationFormats[muek.key] = muek;
 
 function displayLocationCode(components, explanation) {
   const locationCode = document.getElementById('location-code');
-  locationCode.innerHTML = '&nbsp;';
 
   if (components === null) {
+    window.location.hash = '';
+    locationCode.innerHTML = '&nbsp;';
     return;
   }
 
+  locationCode.innerHTML = '';
   for (const [i, component] of components.entries()) {
     const componentEl = document.createElement('span');
     componentEl.textContent = component;
     componentEl.title = explanation[i];
     locationCode.appendChild(componentEl);
   }
+
+  window.location.hash = locationCode.innerText.toLowerCase();
 }
 
 function initMaps() {
