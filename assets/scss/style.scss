@@ -257,8 +257,8 @@ main {
       left: 50%;
       width: 0;
       height: 0;
-      background-color: $color-accent;
       border-radius: 50%;
+      background-color: $color-accent;
       content: '';
       transform: translate(-50%, -50%);
       transition: all $transition-duration ease-in-out;
@@ -285,9 +285,9 @@ a.link-btn {
   display: inline-block;
   padding: 0.5em 1em;
   border: 0.1em solid $color-accent;
+  border-radius: 0.2em;
   margin: 1.2em 0;
   background: none;
-  border-radius: 0.2em;
   color: $color-accent;
   text-align: center;
   text-decoration: none;
@@ -435,6 +435,7 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
     }
 
     .timetable-slot:nth-child(#{$i}) {
+      border-radius: list.slash($radii-1st, $radii-2nd);
       background:
       linear-gradient($color-background, $color-background) padding-box,
       linear-gradient(to bottom right,
@@ -449,7 +450,6 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
             (1 - math.div($i, $timetable-children)) * 100%
           )
         ) border-box;
-      border-radius: list.slash($radii-1st, $radii-2nd);
 
       &:hover,
       &:focus {
