@@ -47,6 +47,15 @@
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
     {{ end }}
 
+    {{ $jsfiles := slice "style" }}
+    {{ if isset .Page.Params "extrajs" }}
+    {{ range .Page.Params.extrajs }}
+    {{ $jspath := . | printf "js/%s.js" }}
+    {{ $js := resources.Get $jspath | js.Build (dict "minify" true) }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" async defer></script>
+    {{ end }}
+    {{ end }}
+
     {{ if isset .Page.Params "customhead" }}
     {{ .Page.Params.customhead | safeHTML }}
     {{ end }}
