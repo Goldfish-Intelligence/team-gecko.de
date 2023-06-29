@@ -23,6 +23,29 @@ function displayLocationCode(components, explanation) {
   window.location.hash = locationCode.innerText.toLowerCase();
 }
 
+function parseLocation(location) {
+  for (const [key, format] of Object.entries(locationFormats)) {
+    const match = format.regex.exec(location);
+
+    if (match === null) {
+      continue;
+    }
+
+    const result = {
+      key,
+      location: {},
+    };
+
+    for (const [name, group] of Object.entries(format.groups)) {
+      result.location[name] = match[group];
+    }
+
+    return result;
+  }
+
+  return null;
+}
+
 function initMaps() {
   for (const [key, map] of Object.entries(locationFormats)) {
     const canvas = document.getElementById(`map-${key}`);
@@ -37,4 +60,17 @@ function initMaps() {
   }
 }
 
+// read and display location code from URL hash
+function readLocationCodeFromURL() {
+  const locationCode = window.decodeURIComponent(window.location.hash.slice(1));
+  const location = parseLocation(locationCode);
+  if (location !== null) {
+    const canvas = document.getElementById(`map-${location.key}`);
+    const map = locationFormats[location.key];
+    map.highlightLocation(canvas, location.location);
+    displayLocationCode(map.displayComponents(location.location), map.explain(location.location));
+  }
+}
+
 initMaps();
+readLocationCodeFromURL();
