@@ -214,3 +214,40 @@ const tables = {
     a: [],
   },
 };
+
+const scaleFactor = 3;
+
+function drawTable(canvasContext, table) {
+  const tableLength = table[2] ? 10 : 8;
+  const tableWidth = table[3] ? tableLength : 6;
+  const tableHeight = table[3] ? 6 : tableLength;
+
+  canvasContext.fillRect(table[0], table[1], tableWidth, tableHeight);
+  canvasContext.strokeRect(table[0], table[1], tableWidth, tableHeight);
+}
+
+export function draw(canvas) {
+  const ctx = canvas.getContext('2d');
+
+  ctx.canvas.width = scaleFactor * 222;
+  ctx.canvas.height = scaleFactor * 186;
+  ctx.scale(scaleFactor, scaleFactor);
+
+  // border
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = 'white';
+  ctx.strokeRect(2, 2, 218, 182); // outer border
+  ctx.strokeRect(78, 42, 66, 66); // stairwell
+
+  // tables
+  ctx.lineWidth = 1;
+  ctx.fillStyle = 'yellowgreen';
+  ctx.strokeStyle = 'darkgreen';
+  for (const angle of Object.values(tables)) {
+    for (const ring of Object.values(angle)) {
+      for (const table of ring) {
+        drawTable(ctx, table);
+      }
+    }
+  }
+}
