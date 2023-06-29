@@ -251,3 +251,57 @@ export function draw(canvas) {
     }
   }
 }
+
+// euclidean distance of between a point and a rectangle
+function distanceToRectangle(x, y, rx, ry, rw, rh) {
+  const dx = Math.max(rx - x, 0, x - (rx + rw));
+  const dy = Math.max(ry - y, 0, y - (ry + rh));
+  return Math.sqrt(dx * dx + dy * dy);
+}
+
+export function locationFromCoordinates(x, y) {
+  // calculate table location from canvas coordinates
+
+  // choose the location that is closest to the click
+  let minDistance = Infinity;
+  let closestArea = null;
+
+  for (const [angleKey, angle] of Object.entries(tables)) {
+    for (const [ringKey, ring] of Object.entries(angle)) {
+      for (const table of ring) {
+        const distance = distanceToRectangle(
+          x / scaleFactor,
+          y / scaleFactor,
+          table[0],
+          table[1],
+          table[2] ? 10 : 8,
+          table[2] ? 6 : 8,
+        );
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestArea = { angle: angleKey, ring: ringKey };
+        }
+      }
+    }
+  }
+
+  // don't highlight if user clicks in the middle of nowhere
+  return minDistance < 20 ? closestArea : null;
+}
+
+export function highlightLocation(canvas, location) {
+  // clear previous highlights
+  draw(canvas);
+
+  if (location === null) {
+    return;
+  }
+
+  // highlight tables at location
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = 'orange';
+  ctx.strokeStyle = 'red';
+  for (const table of tables[location.angle][location.ring]) {
+    drawTable(ctx, table);
+  }
+}
