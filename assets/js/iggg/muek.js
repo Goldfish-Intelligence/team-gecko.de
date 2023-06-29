@@ -305,3 +305,27 @@ export function highlightLocation(canvas, location) {
     drawTable(ctx, table);
   }
 }
+
+export function displayComponents(location) {
+  return location === null ? null : ['MüK', location.angle, location.ring];
+}
+
+export function explain(location) {
+  if (location === null) {
+    return null;
+  }
+
+  if (location.angle === '') {
+    return ['MüK', null, null];
+  }
+
+  const angles = location.angle.split(',');
+  const angleExplanation = `${angles.length === 2 ? `zwischen ${angles[0]} und ${angles[1]}` : location.angle} Uhr`;
+
+  if (location.ring === '') {
+    return ['MüK', angleExplanation, null];
+  }
+
+  const ringExplanation = location.ring === 'i' ? 'innerer Ring' : 'äußerer Ring';
+  return [name, angleExplanation, ringExplanation];
+}
