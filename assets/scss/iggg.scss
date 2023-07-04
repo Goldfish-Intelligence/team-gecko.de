@@ -1,5 +1,63 @@
+@use "sass:color";
+
 @import "variables";
 
-canvas {
-  margin: 0 auto;
+#container.page-iggg {
+
+  main {
+    max-width: unset;
+    text-align: center;
+  }
+
+  canvas {
+    margin: 2em auto;
+  }
+
+  #location-code {
+    display: inline-block;
+    border-radius: 0.1em;
+    margin: 0.5em 0 0;
+    background:
+    linear-gradient(to right, color.adjust($color-accent, $saturation: 40%), color.adjust($color-accent, $red: 80));
+    background-clip: text;
+    font-size: 4em;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+
+    span {
+      margin: 0 0.05em;
+    }
+
+    &:not(:has(span)) {
+      display: none;
+    }
+
+    ::selection {
+      background: $color-highlight;
+      background-clip: unset;
+      color: $color-background;
+      -webkit-text-fill-color: $color-background;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-s) {
+    #location-code {
+      font-size: 2.5em;
+    }
+  }
+
+  #location-code-explanation {
+    margin-top: 0;
+    font-size: 0.9em;
+    text-align: center;
+
+    span {
+      display: inline-block;
+      padding: 0 0.4em;
+      border: 0.1em solid $color-accent;
+      border-radius: 0.2em;
+      margin: 0.25em;
+    }
+  }
+
 }

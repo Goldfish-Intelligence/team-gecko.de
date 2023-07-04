@@ -5,19 +5,26 @@ locationFormats[muek.key] = muek;
 
 function displayLocationCode(components, explanation) {
   const locationCode = document.getElementById('location-code');
+  const locationCodeExplanation = document.getElementById('location-code-explanation');
 
   if (components === null) {
     window.location.hash = '';
     locationCode.innerHTML = '&nbsp;';
+    locationCodeExplanation.innerHTML = '&nbsp;';
     return;
   }
 
   locationCode.innerHTML = '';
+  locationCodeExplanation.innerHTML = '';
   for (const [i, component] of components.entries()) {
     const componentEl = document.createElement('span');
     componentEl.textContent = component;
     componentEl.title = explanation[i];
     locationCode.appendChild(componentEl);
+
+    const explanationEl = document.createElement('span');
+    explanationEl.textContent = explanation[i];
+    locationCodeExplanation.appendChild(explanationEl);
   }
 
   window.location.hash = locationCode.innerText.toLowerCase();

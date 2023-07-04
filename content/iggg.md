@@ -8,6 +8,6 @@ extrajs:
     - "iggg/iggg"
 ---
 
-## IGGG
+## Inoffizielle Genormte Gecko Geoposition
 
 {{% iggg/iggg %}}
