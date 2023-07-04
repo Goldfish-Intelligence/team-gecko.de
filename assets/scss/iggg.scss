@@ -9,6 +9,11 @@
     text-align: center;
   }
 
+  .canvas-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+
   canvas {
     margin: 2em auto;
     cursor: pointer;

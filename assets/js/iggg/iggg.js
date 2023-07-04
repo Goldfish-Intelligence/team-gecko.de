@@ -79,5 +79,12 @@ function readLocationCodeFromURL() {
   }
 }
 
+window.addEventListener('resize', () => {
+  for (const [key, map] of Object.entries(locationFormats)) {
+    const canvas = document.getElementById(`map-${key}`);
+    map.draw(canvas);
+  }
+});
+
 initMaps();
 readLocationCodeFromURL();

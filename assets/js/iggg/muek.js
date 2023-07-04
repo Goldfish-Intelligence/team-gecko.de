@@ -6,6 +6,9 @@ export const groups = {
   ring: 14,
 };
 
+const width = 222;
+const height = 186;
+
 // angle (1-12) → ring (i/a) → tables
 // table: [x pos, y pos, is long table, orientation (true = horizontal)]
 const tables = {
@@ -215,7 +218,7 @@ const tables = {
   },
 };
 
-const scaleFactor = 3;
+let scaleFactor;
 
 function drawTable(canvasContext, table) {
   const tableLength = table[2] ? 10 : 8;
@@ -227,10 +230,12 @@ function drawTable(canvasContext, table) {
 }
 
 export function draw(canvas) {
+  scaleFactor = Math.max(Math.min((window.innerWidth * 0.9) / width, 3), 2);
+
   const ctx = canvas.getContext('2d');
 
-  ctx.canvas.width = scaleFactor * 222;
-  ctx.canvas.height = scaleFactor * 186;
+  ctx.canvas.width = scaleFactor * width;
+  ctx.canvas.height = scaleFactor * height;
   ctx.scale(scaleFactor, scaleFactor);
 
   // border
