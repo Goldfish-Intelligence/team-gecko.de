@@ -1,3 +1,5 @@
+import * as variables from './variables';
+
 export const name = 'Mensa über [kœri]werk';
 export const key = 'muek';
 export const regex = /^M(ü|ue)K(1(,2)?|2(,3)?|3(,4)?|4(,5)?|5(,6)?|6(,7)?|7(,8)?|8(,9)?|9(,10)?|10(,11)?|11(,12)?|12)([ai]?)$/i;
@@ -240,14 +242,19 @@ export function draw(canvas) {
 
   // border
   ctx.lineWidth = 2;
-  ctx.strokeStyle = 'white';
+  ctx.strokeStyle = variables.outlineStroke;
+  ctx.fillStyle = variables.markersFill;
+  ctx.font = variables.font;
   ctx.strokeRect(2, 2, 218, 182); // outer border
   ctx.strokeRect(78, 42, 66, 66); // stairwell
+  ctx.fillText('L1', 30, 20);
+  ctx.fillText('L2', 80, 20);
+  ctx.fillText('MS', 180, 20);
 
   // tables
   ctx.lineWidth = 1;
-  ctx.fillStyle = 'yellowgreen';
-  ctx.strokeStyle = 'darkgreen';
+  ctx.fillStyle = variables.locationFill;
+  ctx.strokeStyle = variables.locationStroke;
   for (const angle of Object.values(tables)) {
     for (const ring of Object.values(angle)) {
       for (const table of ring) {
@@ -304,8 +311,8 @@ export function highlightLocation(canvas, location) {
 
   // highlight tables at location
   const ctx = canvas.getContext('2d');
-  ctx.fillStyle = 'orange';
-  ctx.strokeStyle = 'red';
+  ctx.fillStyle = variables.highlightFill;
+  ctx.strokeStyle = variables.highlightStroke;
   for (const table of tables[location.angle][location.ring]) {
     drawTable(ctx, table);
   }
