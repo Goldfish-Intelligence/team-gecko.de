@@ -18,10 +18,19 @@ const tables = {
     i: [],
     a: [],
   },
+  '1,2': {
+    i: [],
+    a: [],
+  },
   2: {
     i: [
       [146, 44, true, true],
       [156, 44, false, true],
+    ],
+    a: [],
+  },
+  '2,3': {
+    i: [
       [146, 58, true, true],
       [156, 58, false, true],
     ],
@@ -41,24 +50,30 @@ const tables = {
       [194, 78, false, true],
       [202, 78, false, true],
       [210, 78, false, true],
+    ],
+  },
+  '3,4': {
+    i: [
+      [146, 86, true, true],
+      [156, 86, false, true],
+    ],
+    a: [
       [186, 91, false, true],
       [194, 91, false, true],
       [202, 91, false, true],
       [210, 91, false, true],
-    ],
-  },
-  4: {
-    i: [
-      [146, 86, true, true],
-      [156, 86, false, true],
-      [146, 100, true, true],
-      [156, 100, false, true],
-    ],
-    a: [
       [186, 104, false, true],
       [194, 104, false, true],
       [202, 104, false, true],
       [210, 104, false, true],
+    ],
+  },
+  4: {
+    i: [
+      [146, 100, true, true],
+      [156, 100, false, true],
+    ],
+    a: [
       [186, 117, false, true],
       [194, 117, false, true],
       [202, 117, false, true],
@@ -67,20 +82,15 @@ const tables = {
       [194, 130, false, true],
       [202, 130, false, true],
       [210, 130, false, true],
+    ],
+  },
+  '4,5': {
+    i: [],
+    a: [
       [186, 143, false, true],
       [194, 143, false, true],
       [202, 143, false, true],
       [210, 143, false, true],
-    ],
-  },
-  5: {
-    i: [
-      [138, 110, false, false],
-      [138, 118, true, false],
-      [126, 110, false, false],
-      [126, 118, true, false],
-    ],
-    a: [
       [186, 156, false, true],
       [194, 156, false, true],
       [202, 156, false, true],
@@ -89,6 +99,14 @@ const tables = {
       [194, 169, false, true],
       [202, 169, false, true],
       [210, 169, false, true],
+    ],
+  },
+  5: {
+    i: [
+      [138, 110, false, false],
+      [138, 118, true, false],
+    ],
+    a: [
       [166, 150, false, false],
       [166, 158, false, false],
       [166, 166, false, false],
@@ -97,10 +115,22 @@ const tables = {
       [153, 158, false, false],
       [153, 166, false, false],
       [153, 174, false, false],
+    ],
+  },
+  '5,6': {
+    i: [
+      [126, 110, false, false],
+      [126, 118, true, false],
+    ],
+    a: [
       [140, 150, false, false],
       [140, 158, false, false],
       [140, 166, false, false],
       [140, 174, false, false],
+      [127, 150, false, false],
+      [127, 158, false, false],
+      [127, 166, false, false],
+      [127, 174, false, false],
     ],
   },
   6: {
@@ -111,10 +141,6 @@ const tables = {
       [102, 118, true, false],
     ],
     a: [
-      [127, 150, false, false],
-      [127, 158, false, false],
-      [127, 166, false, false],
-      [127, 174, false, false],
       [114, 150, false, false],
       [114, 158, false, false],
       [114, 166, false, false],
@@ -123,6 +149,14 @@ const tables = {
       [101, 158, false, false],
       [101, 166, false, false],
       [101, 174, false, false],
+    ],
+  },
+  '6,7': {
+    i: [
+      [90, 110, false, false],
+      [90, 118, true, false],
+    ],
+    a: [
       [88, 150, false, false],
       [88, 158, false, false],
       [88, 166, false, false],
@@ -131,8 +165,6 @@ const tables = {
   },
   7: {
     i: [
-      [90, 110, false, false],
-      [90, 118, true, false],
       [78, 110, false, false],
       [78, 118, true, false],
     ],
@@ -140,30 +172,40 @@ const tables = {
       [57, 156, false, false],
       [57, 164, false, false],
       [57, 172, true, false],
+    ],
+  },
+  '7,8': {
+    i: [],
+    a: [
       [4, 172, false, true],
       [12, 172, false, true],
       [20, 172, true, true],
       [4, 158, true, true],
       [14, 158, false, true],
       [22, 158, false, true],
+      [4, 144, true, true],
+      [14, 144, false, true],
+      [22, 144, false, true],
     ],
   },
   8: {
     i: [
       [58, 99, false, true],
       [66, 99, true, true],
-      [58, 86, false, true],
-      [66, 86, true, true],
     ],
     a: [
-      [4, 144, true, true],
-      [14, 144, false, true],
-      [22, 144, false, true],
       [4, 130, true, true],
       [14, 130, false, true],
       [22, 130, false, true],
       [30, 130, true, true],
     ],
+  },
+  '8,9': {
+    i: [
+      [58, 86, false, true],
+      [66, 86, true, true],
+    ],
+    a: [],
   },
   9: {
     i: [
@@ -179,24 +221,30 @@ const tables = {
       [12, 69, false, true],
       [20, 69, false, true],
       [28, 69, false, true],
+    ],
+  },
+  '9,10': {
+    i: [
+      [58, 60, false, true],
+      [66, 60, true, true],
+    ],
+    a: [
       [4, 56, false, true],
       [12, 56, false, true],
       [20, 56, false, true],
       [28, 56, false, true],
-    ],
-  },
-  10: {
-    i: [
-      [58, 60, false, true],
-      [66, 60, true, true],
-      [58, 47, false, true],
-      [66, 47, true, true],
-    ],
-    a: [
       [4, 43, false, true],
       [12, 43, false, true],
       [20, 43, false, true],
       [28, 43, false, true],
+    ],
+  },
+  10: {
+    i: [
+      [58, 47, false, true],
+      [66, 47, true, true],
+    ],
+    a: [
       [4, 30, false, true],
       [12, 30, false, true],
       [20, 30, false, true],
@@ -210,11 +258,23 @@ const tables = {
       [22, 4, true, true],
     ],
   },
+  '10,11': {
+    i: [],
+    a: [],
+  },
   11: {
     i: [],
     a: [],
   },
+  '11,12': {
+    i: [],
+    a: [],
+  },
   12: {
+    i: [],
+    a: [],
+  },
+  '12,1': {
     i: [],
     a: [],
   },
