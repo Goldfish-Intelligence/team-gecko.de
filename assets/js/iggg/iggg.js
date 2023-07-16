@@ -9,7 +9,7 @@ function displayLocationCode(components, explanation) {
 
   if (components === null) {
     window.location.hash = '';
-    locationCode.innerHTML = '&nbsp;';
+    locationCode.innerHTML = '…';
     locationCodeExplanation.innerHTML = '&nbsp;';
     return;
   }
@@ -32,7 +32,7 @@ function displayLocationCode(components, explanation) {
 
 function parseLocation(location) {
   for (const [key, format] of Object.entries(locationFormats)) {
-    const match = format.regex.exec(location);
+    const match = format.regex.exec(location.trim());
 
     if (match === null) {
       continue;
@@ -67,10 +67,7 @@ function initMaps() {
   }
 }
 
-// read and display location code from URL hash
-function readLocationCodeFromURL() {
-  const locationCode = window.decodeURIComponent(window.location.hash.slice(1));
-  const location = parseLocation(locationCode);
+function showLocation(location) {
   if (location !== null) {
     const canvas = document.getElementById(`map-${location.key}`);
     const map = locationFormats[location.key];
@@ -79,12 +76,55 @@ function readLocationCodeFromURL() {
   }
 }
 
-window.addEventListener('resize', () => {
-  for (const [key, map] of Object.entries(locationFormats)) {
-    const canvas = document.getElementById(`map-${key}`);
-    map.draw(canvas);
-  }
-});
+// read and display location code from URL hash
+function readLocationCodeFromURL() {
+  const locationCodeHash = window.decodeURIComponent(window.location.hash.slice(1));
+  showLocation(parseLocation(locationCodeHash));
+}
 
-initMaps();
-readLocationCodeFromURL();
+function addLocationCodeChangeListeners() {
+  const locationCode = document.getElementById('location-code');
+
+  // prevent line breaks
+  locationCode.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      locationCode.blur();
+    }
+  });
+
+  locationCode.addEventListener('focus', () => {
+    if (locationCode.innerText === '…') {
+      locationCode.innerText = '';
+    }
+  });
+
+  locationCode.addEventListener('blur', () => {
+    showLocation(parseLocation(locationCode.innerText));
+
+    if (locationCode.innerText.trim() === '') {
+      locationCode.innerHTML = '…';
+    }
+  });
+}
+
+function init() {
+  initMaps();
+  readLocationCodeFromURL();
+  addLocationCodeChangeListeners();
+
+  window.addEventListener('resize', () => {
+    for (const [key, map] of Object.entries(locationFormats)) {
+      const canvas = document.getElementById(`map-${key}`);
+      map.draw(canvas);
+    }
+  });
+}
+
+if (document.readyState !== 'loading') {
+  init();
+} else {
+  window.addEventListener('DOMContentLoaded', () => {
+    init();
+  });
+}
