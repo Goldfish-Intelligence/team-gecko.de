@@ -22,9 +22,11 @@ function displayLocationCode(components, explanation) {
     componentEl.title = explanation[i];
     locationCode.appendChild(componentEl);
 
-    const explanationEl = document.createElement('span');
-    explanationEl.textContent = explanation[i];
-    locationCodeExplanation.appendChild(explanationEl);
+    if (explanation[i] !== null) {
+      const explanationEl = document.createElement('span');
+      explanationEl.textContent = explanation[i];
+      locationCodeExplanation.appendChild(explanationEl);
+    }
   }
 
   window.location.hash = locationCode.innerText.toLowerCase();

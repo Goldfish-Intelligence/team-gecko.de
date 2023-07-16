@@ -398,7 +398,17 @@ export function highlightLocation(canvas, location) {
   // highlight tables at location
   ctx.fillStyle = variables.highlightFill;
   ctx.strokeStyle = variables.highlightStroke;
-  for (const table of tables[location.angle][location.ring]) {
+
+  const highlightTables = [];
+  if (location.ring !== '') {
+    highlightTables.push(...tables[location.angle][location.ring]);
+  } else if (location.angle !== '') {
+    for (const ring of Object.values(tables[location.angle])) {
+      highlightTables.push(...ring);
+    }
+  }
+
+  for (const table of highlightTables) {
     drawTable(ctx, table);
   }
 }
@@ -413,14 +423,14 @@ export function explain(location) {
   }
 
   if (location.angle === '') {
-    return ['MüK', null, null];
+    return [name, null, null];
   }
 
   const angles = location.angle.split(',');
   const angleExplanation = `${angles.length === 2 ? `zwischen ${angles[0]} und ${angles[1]}` : location.angle} Uhr`;
 
   if (location.ring === '') {
-    return ['MüK', angleExplanation, null];
+    return [name, angleExplanation, null];
   }
 
   const ringExplanation = location.ring === 'i' ? 'innerer Ring' : 'äußerer Ring';
