@@ -231,6 +231,22 @@ function drawTable(canvasContext, table) {
   canvasContext.strokeRect(table[0], table[1], tableWidth, tableHeight);
 }
 
+function drawAngle(canvasContext, alpha, beta) {
+  const centerX = 111;
+  const centerY = 75;
+  const radius = Math.max(width, height);
+
+  // eslint-disable-next-line no-param-reassign
+  canvasContext.fillStyle = variables.hightlightTransparent;
+
+  canvasContext.moveTo(centerX, centerY);
+  canvasContext.beginPath();
+  canvasContext.arc(centerX, centerY, radius, alpha - Math.PI / 2, beta - Math.PI / 2, false);
+  canvasContext.lineTo(centerX, centerY);
+  canvasContext.fill();
+  canvasContext.closePath();
+}
+
 export function draw(canvas) {
   scaleFactor = Math.max(Math.min((window.innerWidth * 0.9) / width, 3), 2);
 
@@ -309,8 +325,17 @@ export function highlightLocation(canvas, location) {
     return;
   }
 
-  // highlight tables at location
   const ctx = canvas.getContext('2d');
+
+  // highlight angle
+  const radiansPerAngle = (2 * Math.PI) / 24;
+  let angleIndex = (parseInt(location.angle.split(',')[0], 10) % 12) * 2;
+  if (location.angle.includes(',')) {
+    angleIndex += 1;
+  }
+  drawAngle(ctx, (angleIndex - 0.5) * radiansPerAngle, (angleIndex + 1 - 0.5) * radiansPerAngle);
+
+  // highlight tables at location
   ctx.fillStyle = variables.highlightFill;
   ctx.strokeStyle = variables.highlightStroke;
   for (const table of tables[location.angle][location.ring]) {
