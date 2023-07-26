@@ -1,7 +1,9 @@
-import * as muek from './muek';
+import * as muek from './maps/muek';
+import * as ms from './maps/ms';
 
 const locationFormats = {};
 locationFormats[muek.key] = muek;
+locationFormats[ms.key] = ms;
 
 function displayLocationCode(components, explanation) {
   const locationCode = document.getElementById('location-code');

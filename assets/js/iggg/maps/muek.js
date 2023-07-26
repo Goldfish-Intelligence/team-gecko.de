@@ -1,4 +1,4 @@
-import * as variables from './variables';
+import * as variables from '../variables';
 
 export const name = 'Mensa über [kœri]werk';
 export const key = 'muek';
@@ -321,7 +321,7 @@ export function draw(canvas) {
   ctx.strokeStyle = variables.outlineStroke;
   ctx.fillStyle = variables.markersFill;
   ctx.font = variables.font;
-  ctx.strokeRect(2, 2, 218, 182); // outer border
+  ctx.strokeRect(2, 2, width - 4, height - 4); // outer border
   ctx.strokeRect(78, 42, 66, 66); // stairwell
   ctx.fillText('L1', 30, 20);
   ctx.fillText('L2', 80, 20);
