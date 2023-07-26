@@ -84,6 +84,12 @@ function readLocationCodeFromURL() {
   showLocation(parseLocation(locationCodeHash));
 }
 
+function addHashChangeListener() {
+  window.addEventListener('hashchange', () => {
+    readLocationCodeFromURL();
+  });
+}
+
 function addLocationCodeChangeListeners() {
   const locationCode = document.getElementById('location-code');
 
@@ -113,6 +119,7 @@ function addLocationCodeChangeListeners() {
 function init() {
   initMaps();
   readLocationCodeFromURL();
+  addHashChangeListener();
   addLocationCodeChangeListeners();
 
   window.addEventListener('resize', () => {
