@@ -48,7 +48,7 @@ function parseLocation(location) {
     };
 
     for (const [name, group] of Object.entries(format.groups)) {
-      result.location[name] = match[group];
+      result.location[name] = match[group] ? match[group] : null;
     }
 
     return result;

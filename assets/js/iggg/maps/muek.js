@@ -2,10 +2,10 @@ import * as variables from '../variables';
 
 export const name = 'Mensa über [kœri]werk';
 export const key = 'muek';
-export const regex = /^M(ü|ue)K(1(,2)?|2(,3)?|3(,4)?|4(,5)?|5(,6)?|6(,7)?|7(,8)?|8(,9)?|9(,10)?|10(,11)?|11(,12)?|12)([ai]?)$/i;
+export const regex = /^M(ü|ue)K((1(,2)?|2(,3)?|3(,4)?|4(,5)?|5(,6)?|6(,7)?|7(,8)?|8(,9)?|9(,10)?|10(,11)?|11(,12)?|12)([ai]?))?$/i;
 export const groups = {
-  angle: 2,
-  ring: 14,
+  angle: 3,
+  ring: 15,
 };
 
 const width = 222;
@@ -374,7 +374,7 @@ export function locationFromCoordinates(x, y) {
   }
 
   // don't highlight if user clicks in the middle of nowhere
-  return minDistance < 20 ? closestArea : null;
+  return minDistance < 20 ? closestArea : { angle: null, ring: null };
 }
 
 export function highlightLocation(canvas, location) {
@@ -386,6 +386,10 @@ export function highlightLocation(canvas, location) {
   }
 
   const ctx = canvas.getContext('2d');
+
+  if (location.angle === null) {
+    return;
+  }
 
   // highlight angle
   const radiansPerAngle = (2 * Math.PI) / 24;
@@ -400,9 +404,9 @@ export function highlightLocation(canvas, location) {
   ctx.strokeStyle = variables.highlightStroke;
 
   const highlightTables = [];
-  if (location.ring !== '') {
+  if (location.ring !== null) {
     highlightTables.push(...tables[location.angle][location.ring]);
-  } else if (location.angle !== '') {
+  } else if (location.angle !== null) {
     for (const ring of Object.values(tables[location.angle])) {
       highlightTables.push(...ring);
     }
@@ -422,14 +426,14 @@ export function explain(location) {
     return null;
   }
 
-  if (location.angle === '') {
+  if (location.angle === null) {
     return [name, null, null];
   }
 
   const angles = location.angle.split(',');
   const angleExplanation = `${angles.length === 2 ? `zwischen ${angles[0]} und ${angles[1]}` : location.angle} Uhr`;
 
-  if (location.ring === '') {
+  if (location.ring === null) {
     return [name, angleExplanation, null];
   }
 

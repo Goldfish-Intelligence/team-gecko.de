@@ -2,10 +2,10 @@ import * as variables from '../variables';
 
 export const name = 'Mensa Großer Speisesaal';
 export const key = 'ms';
-export const regex = /^MS([1-9])([a-d])$/i;
+export const regex = /^MS(([1-9])([a-d]))?$/i;
 export const groups = {
-  row: 1,
-  column: 2,
+  row: 2,
+  column: 3,
 };
 
 const width = 154;
@@ -154,7 +154,7 @@ export function locationFromCoordinates(x, y) {
   }
 
   // don't highlight if user clicks in the middle of nowhere
-  return minDistance < 20 ? closestArea : null;
+  return minDistance < 20 ? closestArea : { row: null, column: null };
 }
 
 export function highlightLocation(canvas, location) {
@@ -167,18 +167,22 @@ export function highlightLocation(canvas, location) {
 
   const ctx = canvas.getContext('2d');
 
+  if (location.row === null || location.column === null) {
+    return;
+  }
+
   // highlight tables at location
   ctx.fillStyle = variables.highlightFill;
   ctx.strokeStyle = variables.highlightStroke;
 
   const highlightTables = [];
-  if (location.row !== '' && location.column !== '') {
+  if (location.row !== null && location.column !== null) {
     highlightTables.push(...tables[location.row][location.column]);
-  } else if (location.row !== '') {
+  } else if (location.row !== null) {
     for (const column of Object.keys(tables[location.row])) {
       highlightTables.push(...tables[location.row][column]);
     }
-  } else if (location.column !== '') {
+  } else if (location.column !== null) {
     for (const row of Object.keys(tables)) {
       highlightTables.push(...tables[row][location.column]);
     }
@@ -204,20 +208,8 @@ export function explain(location) {
     return null;
   }
 
-  if (location.row === '' && location.column === '') {
-    return [name, null, null];
-  }
-
-  const columnExplanation = `Lampenspalte ${location.column.toUpperCase()}`;
-  const rowExplanation = `Lampenzeile ${location.row}`;
-
-  if (location.row === '') {
-    return [name, null, columnExplanation];
-  }
-
-  if (location.column === '') {
-    return [name, rowExplanation, null];
-  }
+  const columnExplanation = location.column === null ? null : `Lampenspalte ${location.column.toUpperCase()}`;
+  const rowExplanation = location.row === null ? null : `Lampenreihe ${location.row}`;
 
   return [name, rowExplanation, columnExplanation];
 }
