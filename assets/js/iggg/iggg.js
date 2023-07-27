@@ -72,12 +72,25 @@ function initMaps() {
 }
 
 function showLocation(location) {
-  if (location !== null) {
-    const canvas = document.getElementById(`map-${location.key}`);
-    const map = locationFormats[location.key];
-    map.highlightLocation(canvas, location.location);
-    displayLocationCode(map.displayComponents(location.location), map.explain(location.location));
+  if (location === null) {
+    displayLocationCode(null, null);
+    for (const locationFormat of Object.values(locationFormats)) {
+      document.getElementById(`map-${locationFormat.key}`).style.display = 'none';
+    }
+    return;
   }
+
+  for (const locationFormat of Object.values(locationFormats)) {
+    if (locationFormat.key !== location.key) {
+      document.getElementById(`map-${locationFormat.key}`).style.display = 'none';
+    }
+  }
+
+  const canvas = document.getElementById(`map-${location.key}`);
+  canvas.style.display = 'block';
+  const map = locationFormats[location.key];
+  map.highlightLocation(canvas, location.location);
+  displayLocationCode(map.displayComponents(location.location), map.explain(location.location));
 }
 
 // read and display location code from URL hash
