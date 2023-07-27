@@ -34,6 +34,34 @@ function displayLocationCode(components, explanation) {
   window.location.hash = locationCode.innerText.toLowerCase();
 }
 
+function showLocation(location) {
+  function hide(key) {
+    document.getElementById(`map-${key}`).style.display = 'none';
+    document.getElementById(`map-selector-${key}`).classList.remove('selected');
+  }
+
+  if (location === null) {
+    displayLocationCode(null, null);
+    for (const locationFormat of Object.values(locationFormats)) {
+      hide(locationFormat.key);
+    }
+    return;
+  }
+
+  for (const locationFormat of Object.values(locationFormats)) {
+    if (locationFormat.key !== location.key) {
+      hide(locationFormat.key);
+    }
+  }
+
+  const canvas = document.getElementById(`map-${location.key}`);
+  canvas.style.display = 'block';
+  const map = locationFormats[location.key];
+  map.highlightLocation(canvas, location.location);
+  displayLocationCode(map.displayComponents(location.location), map.explain(location.location));
+  document.getElementById(`map-selector-${location.key}`).classList.add('selected');
+}
+
 function parseLocation(location) {
   for (const [key, format] of Object.entries(locationFormats)) {
     const match = format.regex.exec(location.replace(/\s+/g, ''));
@@ -58,11 +86,22 @@ function parseLocation(location) {
 }
 
 function initMaps() {
-  const container = document.getElementById('canvas-wrapper');
+  const canvasWrapper = document.getElementById('canvas-wrapper');
+  const mapSelector = document.getElementById('map-selector');
+
   for (const [key, map] of Object.entries(locationFormats)) {
     const canvas = document.createElement('canvas');
     canvas.id = `map-${key}`;
-    container.appendChild(canvas);
+    canvasWrapper.appendChild(canvas);
+
+    const mapOption = document.createElement('span');
+    mapOption.textContent = map.name;
+    mapOption.id = `map-selector-${key}`;
+    mapOption.addEventListener('click', () => {
+      showLocation(parseLocation(key));
+      document.getElementById('location-code').scrollIntoView();
+    });
+    mapSelector.appendChild(mapOption);
 
     map.draw(canvas);
     canvas.addEventListener('click', (e) => {
@@ -73,28 +112,6 @@ function initMaps() {
       displayLocationCode(map.displayComponents(location), map.explain(location));
     });
   }
-}
-
-function showLocation(location) {
-  if (location === null) {
-    displayLocationCode(null, null);
-    for (const locationFormat of Object.values(locationFormats)) {
-      document.getElementById(`map-${locationFormat.key}`).style.display = 'none';
-    }
-    return;
-  }
-
-  for (const locationFormat of Object.values(locationFormats)) {
-    if (locationFormat.key !== location.key) {
-      document.getElementById(`map-${locationFormat.key}`).style.display = 'none';
-    }
-  }
-
-  const canvas = document.getElementById(`map-${location.key}`);
-  canvas.style.display = 'block';
-  const map = locationFormats[location.key];
-  map.highlightLocation(canvas, location.location);
-  displayLocationCode(map.displayComponents(location.location), map.explain(location.location));
 }
 
 // read and display location code from URL hash
