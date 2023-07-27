@@ -405,7 +405,7 @@ export function highlightLocation(canvas, location) {
 
   const highlightTables = [];
   if (location.ring !== null) {
-    highlightTables.push(...tables[location.angle][location.ring]);
+    highlightTables.push(...tables[location.angle][location.ring.toLowerCase()]);
   } else if (location.angle !== null) {
     for (const ring of Object.values(tables[location.angle])) {
       highlightTables.push(...ring);
@@ -418,7 +418,7 @@ export function highlightLocation(canvas, location) {
 }
 
 export function displayComponents(location) {
-  return location === null ? null : ['MüK', location.angle, location.ring];
+  return location === null ? null : ['MüK', location.angle, location.ring.toLowerCase()];
 }
 
 export function explain(location) {
@@ -437,6 +437,6 @@ export function explain(location) {
     return [name, angleExplanation, null];
   }
 
-  const ringExplanation = location.ring === 'i' ? 'innerer Ring' : 'äußerer Ring';
+  const ringExplanation = location.ring.toLowerCase() === 'i' ? 'innerer Ring' : 'äußerer Ring';
   return [name, angleExplanation, ringExplanation];
 }

@@ -177,14 +177,14 @@ export function highlightLocation(canvas, location) {
 
   const highlightTables = [];
   if (location.row !== null && location.column !== null) {
-    highlightTables.push(...tables[location.row][location.column]);
+    highlightTables.push(...tables[location.row][location.column.toLowerCase()]);
   } else if (location.row !== null) {
     for (const column of Object.keys(tables[location.row])) {
       highlightTables.push(...tables[location.row][column]);
     }
   } else if (location.column !== null) {
     for (const row of Object.keys(tables)) {
-      highlightTables.push(...tables[row][location.column]);
+      highlightTables.push(...tables[row][location.column.toLowerCase()]);
     }
   }
 
@@ -196,7 +196,7 @@ export function highlightLocation(canvas, location) {
   ctx.shadowColor = variables.highlightLampFill;
   ctx.shadowBlur = 15;
   ctx.fillStyle = variables.highlightLampFill;
-  drawLamp(ctx, parseInt(location.row, 10) - 1, location.column.charCodeAt(0) - 97);
+  drawLamp(ctx, parseInt(location.row, 10) - 1, location.column.toLowerCase().charCodeAt(0) - 97);
 }
 
 export function displayComponents(location) {
