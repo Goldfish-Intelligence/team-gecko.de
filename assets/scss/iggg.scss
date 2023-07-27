@@ -19,7 +19,6 @@ main.page-iggg {
   #location-code {
     display: inline-block;
     max-width: 100%;
-    border-radius: 0.1em;
     margin: 0.5em 0 0;
     background:
     linear-gradient(to right, color.adjust($color-accent, $saturation: 40%), color.adjust($color-accent, $red: 80));
@@ -38,6 +37,13 @@ main.page-iggg {
       background-clip: unset;
       color: $color-background;
       -webkit-text-fill-color: $color-background;
+    }
+
+    &:focus {
+      min-width: 2em;
+      box-sizing: border-box;
+      border-bottom: 0.05em solid $color-accent;
+      outline: none;
     }
   }
 

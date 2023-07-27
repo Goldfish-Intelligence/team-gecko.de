@@ -418,7 +418,7 @@ export function highlightLocation(canvas, location) {
 }
 
 export function displayComponents(location) {
-  return location === null ? null : ['MüK', location.angle, location.ring.toLowerCase()];
+  return location === null ? null : ['MüK', location.angle, location.ring === null ? null : location.ring.toLowerCase()];
 }
 
 export function explain(location) {
