@@ -17,6 +17,30 @@ main.page-iggg {
     -webkit-tap-highlight-color: transparent;
   }
 
+  #share-btn {
+    position: relative;
+    bottom: 1em;
+    left: 1em;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    color: $color-accent;
+    cursor: pointer;
+    transition: color $transition-duration ease-in-out;
+
+    &:focus,
+    &:hover {
+      color: color.adjust($color-accent, $lightness: 20%);
+    }
+
+    @media screen and (max-width: $breakpoint-s) {
+      bottom: 0.5em;
+      left: 0.5em;
+      width: 1.4em;
+      height: 1.4em;
+    }
+  }
+
   #location-code {
     display: inline-block;
     max-width: 100%;

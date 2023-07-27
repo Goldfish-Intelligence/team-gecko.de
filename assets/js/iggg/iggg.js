@@ -8,13 +8,17 @@ locationFormats[ms.key] = ms;
 function displayLocationCode(components, explanation) {
   const locationCode = document.getElementById('location-code');
   const locationCodeExplanation = document.getElementById('location-code-explanation');
+  const shareButton = document.getElementById('share-btn');
 
   if (components === null) {
     window.location.hash = '';
     locationCode.innerHTML = '…';
     locationCodeExplanation.innerHTML = '&nbsp;';
+    shareButton.style.display = 'none';
     return;
   }
+
+  shareButton.style.display = 'inline-block';
 
   locationCode.innerHTML = '';
   locationCodeExplanation.innerHTML = '';
@@ -152,11 +156,31 @@ function addLocationCodeChangeListeners() {
   });
 }
 
+function addShareButtonListener() {
+  document.getElementById('share-btn').addEventListener('click', () => {
+    const text = document.getElementById('location-code').innerText;
+    const url = window.location.href;
+
+    const shareData = {
+      title: 'IGGG',
+      text,
+      url,
+    };
+
+    if (navigator.share && navigator.canShare(shareData)) {
+      navigator.share(shareData);
+    } else {
+      navigator.clipboard.writeText(`${text} — ${url}`);
+    }
+  });
+}
+
 function init() {
   initMaps();
   readLocationCodeFromURL();
   addHashChangeListener();
   addLocationCodeChangeListeners();
+  addShareButtonListener();
 
   window.addEventListener('resize', () => {
     for (const [key, map] of Object.entries(locationFormats)) {
