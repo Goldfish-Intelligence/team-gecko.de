@@ -58,8 +58,12 @@ function parseLocation(location) {
 }
 
 function initMaps() {
+  const container = document.getElementById('canvas-wrapper');
   for (const [key, map] of Object.entries(locationFormats)) {
-    const canvas = document.getElementById(`map-${key}`);
+    const canvas = document.createElement('canvas');
+    canvas.id = `map-${key}`;
+    container.appendChild(canvas);
+
     map.draw(canvas);
     canvas.addEventListener('click', (e) => {
       const location = map.locationFromCoordinates(e.offsetX, e.offsetY);
