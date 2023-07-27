@@ -36,7 +36,7 @@ function displayLocationCode(components, explanation) {
 
 function parseLocation(location) {
   for (const [key, format] of Object.entries(locationFormats)) {
-    const match = format.regex.exec(location.trim());
+    const match = format.regex.exec(location.replace(/\s+/g, ''));
 
     if (match === null) {
       continue;
