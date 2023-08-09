@@ -15,7 +15,15 @@
         <script>
             document.documentElement.classList.remove('is-animating');
             const swup = new Swup({
-                linkSelector: 'nav a'
+                linkSelector: 'nav a',
+                plugins: [
+                    new SwupHeadPlugin({
+                        awaitAssets: true
+                    }),
+                    new SwupScriptsPlugin({
+                        optin: true
+                    }),
+                ]
             });
         </script>
     </body>
