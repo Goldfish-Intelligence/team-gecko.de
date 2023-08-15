@@ -17,13 +17,14 @@ main.page-iggg {
     -webkit-tap-highlight-color: transparent;
   }
 
-  #share-btn {
+  .iggg-code-btn {
     position: relative;
     bottom: 1em;
     left: 1em;
     display: inline-block;
     width: 2em;
     height: 2em;
+    margin-left: 0.25em;
     color: $color-accent;
     cursor: pointer;
     transition: color $transition-duration ease-in-out;

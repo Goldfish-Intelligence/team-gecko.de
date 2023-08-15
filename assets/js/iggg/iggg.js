@@ -7,20 +7,25 @@ locationFormats[mb.key] = mb;
 locationFormats[muek.key] = muek;
 locationFormats[ms.key] = ms;
 
+const canShare = navigator.share && navigator.canShare({ title: 'IGGG', text: '…', url: 'https://team-gecko.de' });
+
 function displayLocationCode(components, explanation) {
   const locationCode = document.getElementById('location-code');
   const locationCodeExplanation = document.getElementById('location-code-explanation');
+  const copyButton = document.getElementById('copy-btn');
   const shareButton = document.getElementById('share-btn');
 
   if (components === null) {
     window.location.hash = '';
     locationCode.innerHTML = '…';
     locationCodeExplanation.innerHTML = '&nbsp;';
+    copyButton.style.display = 'none';
     shareButton.style.display = 'none';
     return;
   }
 
-  shareButton.style.display = 'inline-block';
+  copyButton.style.display = 'inline-block';
+  shareButton.style.display = canShare ? 'inline-block' : 'none';
 
   locationCode.innerHTML = '';
   locationCodeExplanation.innerHTML = '';
@@ -158,8 +163,22 @@ function addLocationCodeChangeListeners() {
   });
 }
 
+function addCopyButtonListener() {
+  document.getElementById('copy-btn').addEventListener('click', () => {
+    const text = document.getElementById('location-code').innerText;
+    navigator.clipboard.writeText(text);
+  });
+}
+
 function addShareButtonListener() {
-  document.getElementById('share-btn').addEventListener('click', () => {
+  const shareButton = document.getElementById('share-btn');
+
+  if (!canShare) {
+    shareButton.style.display = 'none';
+    return;
+  }
+
+  shareButton.addEventListener('click', () => {
     const text = document.getElementById('location-code').innerText;
     const url = window.location.href;
 
@@ -169,9 +188,10 @@ function addShareButtonListener() {
       url,
     };
 
-    if (navigator.share && navigator.canShare(shareData)) {
+    if (navigator.canShare(shareData)) {
       navigator.share(shareData);
     } else {
+      // fallback
       navigator.clipboard.writeText(`${text} — ${url}`);
     }
   });
@@ -182,6 +202,7 @@ function init() {
   readLocationCodeFromURL();
   addHashChangeListener();
   addLocationCodeChangeListeners();
+  addCopyButtonListener();
   addShareButtonListener();
 
   window.addEventListener('resize', () => {
