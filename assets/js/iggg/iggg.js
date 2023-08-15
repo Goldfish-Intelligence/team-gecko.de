@@ -1,7 +1,9 @@
+import * as mb from './maps/mb';
 import * as muek from './maps/muek';
 import * as ms from './maps/ms';
 
 const locationFormats = {};
+locationFormats[mb.key] = mb;
 locationFormats[muek.key] = muek;
 locationFormats[ms.key] = ms;
 
