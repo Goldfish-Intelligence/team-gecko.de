@@ -32,14 +32,24 @@
     <meta property="og:image:alt" content="Team Gecko Logo">
     <meta property="og:url" content="https://team-gecko.de/2020/">
 
-    <link rel="stylesheet" href="/css/style.3f1278ca80a28a6de84b96e2ea2ff42457fb62d1eda8212f4ea0bb75b6ef97e6.css" integrity="sha256-PxJ4yoCiim3oS5bi6i/0JFf7YtHtqCEvTqC7dbbvl&#43;Y=" media="screen">
+    
+    
+
+    
+    
+    <link rel="stylesheet" href="/css/style.0e39f1ec3ac13de49f9c47e595b0e8f9e8d5351cfc88cbf43252b9d77babc13c.css" integrity="sha256-Djnx7DrBPeSfnEfllbDo&#43;ejVNRz8iMv0MlK513urwTw=" media="screen">
+    
+
+    
 
     
     <link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css">
     <style>.calendar-container{position:relative;width:140%;left:-20%;display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:clip}@media screen and (max-width:1250px){.calendar-container{position:static;width:100%}}#calendar-1,#calendar-2{height:820px;margin:auto;margin-top:2em;width:1200px;flex:0 0 auto}.event-ignore{color:red;margin:0}.tui-full-calendar-timegrid-timezone{background:0 0 !important}.tui-full-calendar-popup-container{background-color:rgba(0,0,0,.8) !important;font-weight:normal}.tui-full-calendar-section-button,.tui-full-calendar-time-guide-creation{display:none !important}.tui-full-calendar-dayname-container,.tui-full-calendar-timegrid-timezone,.tui-full-calendar-splitter,.tui-full-calendar-allday-left,.tui-full-calendar-time-date,.tui-full-calendar-timegrid-gridline,.tui-full-calendar-weekday-grid-line{border:1px solid rgba(255,255,255,.25) !important}.tui-full-calendar-dayname-container,.tui-full-calendar-weekday-grid,.tui-full-calendar-weekday-schedules,.tui-full-calendar-timegrid-container{overflow-y:clip}</style>
     
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.19/swup.min.js" integrity="sha512-LXgtFBdusH6FLwyEFVU+OoNTeaZ5d9Ze8HZE+Gx1QDk6PoSbQfCZYyrslbV8QASixYJm1TZlXlbqYaYDrKQGhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swup@4" integrity="sha512-xAbJQ1gNibRWSR+5a/LQPZZdApI7pS/gHVNK2Miga1hfMIzy+/Fnx0Lr+/Eaqqes4SvgoZWrLJE86Y9kKGzIQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@swup/head-plugin@2" integrity="sha512-WpzmsPfbvM5hEu+vrNzFACO6zH+2PppKDaLj1M1G+jOofdPVnsVNpkhtZL/KCiSVGxqeoYfXuXzt+Y3VY0SLeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@swup/scripts-plugin@2" integrity="sha512-0RFNxmuhKPU1/26iJrhROqRu0g8cjFIxMr19hTUiTj3KrMp5sidY8wb/V4TYIDHGavyBPb1BnFgs5hx6rLTDKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         document.documentElement.classList.add('is-animating');
     </script>
@@ -55,6 +65,7 @@
         <a href="" title="O-Phase" class="nav-link">O-Phase</a>
         <a href="team" title="Tutor*innen" class="nav-link">Tutor*innen</a>
         <a href="archiv" title="Vergangene O-Phasen" class="nav-link">Archiv</a>
+        <a href="iggg" title="Inoffizielle Genormte Gecko Geoposition" class="nav-link">IGGG</a>
     </nav>
 
     <div id="social">
@@ -83,7 +94,7 @@
     </div>
 
 </header>
-<main id="swup" class="transition-fade">
+<main id="swup" class="transition-fade page-2020">
 <h2 id="o-phase-2020">O-Phase 2020</h2>
 <p><strong>16. bis 30. Oktober 2020</strong></p>
 <p>Hallo! Will­kommen auf der Webseite der O-Phasen­gruppe von &ldquo;FC Gecko&rdquo;.</p>
@@ -750,7 +761,15 @@ var calOptions={defaultView:"week",taskView:!1,template:{monthDayname:function(e
         <script>
             document.documentElement.classList.remove('is-animating');
             const swup = new Swup({
-                linkSelector: 'nav a'
+                linkSelector: 'nav a',
+                plugins: [
+                    new SwupHeadPlugin({
+                        awaitAssets: true
+                    }),
+                    new SwupScriptsPlugin({
+                        optin: true
+                    }),
+                ]
             });
         </script>
     </body>
