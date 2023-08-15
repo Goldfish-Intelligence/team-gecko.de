@@ -1,0 +1,122 @@
+@use "sass:color";
+
+@import "variables";
+
+main.page-iggg {
+  max-width: unset;
+  text-align: center;
+
+  #canvas-wrapper {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  canvas {
+    margin: 2em auto;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #share-btn {
+    position: relative;
+    bottom: 1em;
+    left: 1em;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    color: $color-accent;
+    cursor: pointer;
+    transition: color $transition-duration ease-in-out;
+
+    &:focus,
+    &:hover {
+      color: color.adjust($color-accent, $lightness: 20%);
+    }
+
+    @media screen and (max-width: $breakpoint-s) {
+      bottom: 0.5em;
+      left: 0.5em;
+      width: 1.4em;
+      height: 1.4em;
+    }
+  }
+
+  #location-code {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0.5em 0 0;
+    background:
+    linear-gradient(to right, color.adjust($color-accent, $saturation: 40%), color.adjust($color-accent, $red: 80));
+    background-clip: text;
+    font-size: 4em;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+
+    span {
+      margin: 0 0.05em;
+    }
+
+    &::selection,
+    ::selection {
+      background: $color-highlight;
+      background-clip: unset;
+      color: $color-background;
+      -webkit-text-fill-color: $color-background;
+    }
+
+    &:focus {
+      min-width: 2em;
+      box-sizing: border-box;
+      border-bottom: 0.05em solid $color-accent;
+      outline: none;
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-s) {
+    #location-code {
+      font-size: 2.5em;
+    }
+  }
+
+  #location-code-explanation {
+    min-height: 4.2em;
+    margin-top: 0.4em;
+    font-size: 0.9em;
+    text-align: center;
+
+    span {
+      display: inline-block;
+      padding: 0 0.4em;
+      border: 0.1em solid $color-accent;
+      border-radius: 0.2em;
+      margin: 0.25em;
+    }
+  }
+
+  #map-selector {
+    margin-top: 4em;
+    text-align: center;
+
+    span {
+      display: inline-block;
+      padding: 0.2em 0.6em;
+      border: 0.1em solid $color-accent;
+      border-radius: 0.2em;
+      margin: 0.25em;
+      cursor: pointer;
+      transition: all $transition-duration ease-in-out;
+
+      &:hover,
+      &:focus {
+        background-color: $color-accent;
+        color: $color-background;
+      }
+
+      &.selected {
+        border-color: color.adjust($color-accent, $red: 120);
+        background-color: color.adjust($color-accent, $red: 120);
+        color: $color-background;
+      }
+    }
+  }
+}

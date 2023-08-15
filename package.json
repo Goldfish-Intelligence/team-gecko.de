@@ -1,13 +1,38 @@
 {
   "devDependencies": {
-    "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.16",
-    "postcss-cli": "^10.0.0",
-    "stylelint": "^14.11.0",
-    "stylelint-config-idiomatic-order": "^8.1.0",
-    "stylelint-config-recommended-scss": "^7.0.0"
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
+    "stylelint": "^15.9.0",
+    "stylelint-config-idiomatic-order": "^9.0.0",
+    "stylelint-config-recommended-scss": "^12.0.0"
+  },
+  "scripts": {
+    "lint": "eslint .; stylelint \"assets/**/*.{css,scss}\""
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": "airbnb-base",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-restricted-syntax": "off",
+      "no-continue": "off"
+    }
   },
   "stylelint": {
+    "validate": [
+      "css",
+      "scss"
+    ],
     "extends": [
       "stylelint-config-recommended-scss",
       "stylelint-config-idiomatic-order"

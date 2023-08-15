@@ -7,7 +7,7 @@
                 <img src="img/gecko_background.svg">
             </div>
             {{- partial "header.html" . -}}
-            <main id="swup" class="transition-fade">
+            <main id="swup" class="transition-fade page-{{ .File.BaseFileName }}">
             {{- block "main" . }}{{- end }}
             </main>
             {{- partial "footer.html" . -}}
@@ -15,7 +15,15 @@
         <script>
             document.documentElement.classList.remove('is-animating');
             const swup = new Swup({
-                linkSelector: 'nav a'
+                linkSelector: 'nav a',
+                plugins: [
+                    new SwupHeadPlugin({
+                        awaitAssets: true
+                    }),
+                    new SwupScriptsPlugin({
+                        optin: true
+                    }),
+                ]
             });
         </script>
     </body>

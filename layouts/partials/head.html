@@ -33,14 +33,35 @@
 
     {{ $css_options := (dict "transpiler" "dartsass" "targetPath" "css/style.css" "outputStyle" "compressed") -}}
     {{ $postcss_options := (dict "noMap" true) -}}
-    {{ $style := resources.Get "scss/style.scss" | toCSS $css_options | postCSS $postcss_options | fingerprint -}}
+
+    {{ $scssstyles := slice "style" }}
+    {{ if isset .Page.Params "extrascss" }}
+    {{ range .Page.Params.extrascss }}
+    {{ $scssstyles = $scssstyles | append . }}
+    {{ end }}
+    {{ end }}
+
+    {{ range $scssstyles }}
+    {{ $scsspath := . | printf "scss/%s.scss" }}
+    {{ $style := resources.Get $scsspath | toCSS $css_options | postCSS $postcss_options | fingerprint -}}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
+    {{ end }}
+
+    {{ if isset .Page.Params "extrajs" }}
+    {{ range .Page.Params.extrajs }}
+    {{ $jspath := . | printf "js/%s.js" }}
+    {{ $js := resources.Get $jspath | js.Build (dict "minify" true) }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" async defer data-swup-reload-script></script>
+    {{ end }}
+    {{ end }}
 
     {{ if isset .Page.Params "customhead" }}
     {{ .Page.Params.customhead | safeHTML }}
     {{ end }}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/swup/2.0.19/swup.min.js" integrity="sha512-LXgtFBdusH6FLwyEFVU+OoNTeaZ5d9Ze8HZE+Gx1QDk6PoSbQfCZYyrslbV8QASixYJm1TZlXlbqYaYDrKQGhw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swup@4" integrity="sha512-xAbJQ1gNibRWSR+5a/LQPZZdApI7pS/gHVNK2Miga1hfMIzy+/Fnx0Lr+/Eaqqes4SvgoZWrLJE86Y9kKGzIQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@swup/head-plugin@2" integrity="sha512-WpzmsPfbvM5hEu+vrNzFACO6zH+2PppKDaLj1M1G+jOofdPVnsVNpkhtZL/KCiSVGxqeoYfXuXzt+Y3VY0SLeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@swup/scripts-plugin@2" integrity="sha512-0RFNxmuhKPU1/26iJrhROqRu0g8cjFIxMr19hTUiTj3KrMp5sidY8wb/V4TYIDHGavyBPb1BnFgs5hx6rLTDKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         document.documentElement.classList.add('is-animating');
     </script>
