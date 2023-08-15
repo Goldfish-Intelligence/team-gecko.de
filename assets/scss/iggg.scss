@@ -12,7 +12,7 @@ main.page-iggg {
   }
 
   canvas {
-    margin: 2em auto;
+    margin: 2em auto 5em;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
   }
@@ -95,7 +95,6 @@ main.page-iggg {
   }
 
   #map-selector {
-    margin-top: 4em;
     text-align: center;
 
     span {
