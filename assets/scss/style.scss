@@ -554,3 +554,22 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
 h2#tutorinnen {
   margin-bottom: 1em;
 }
+
+#konami {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  user-select: none;
+
+  img {
+    display: block;
+    display: none;
+    margin: 0 auto;
+    // zoom into mouth when scaling
+    transform-origin: 40% 65%;
+  }
+}
