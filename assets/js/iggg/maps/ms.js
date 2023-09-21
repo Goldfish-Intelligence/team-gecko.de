@@ -16,11 +16,11 @@ const height = 334;
 const tables = {};
 
 function initTables() {
-  const tableRowMap = ['8', '8', '7', '7', '7', '6', '6', '6', '5', '5', '5', '4', '4', '3', '3', '3', '2', '2'];
+  const tableRowMap = ['8', '8', '7', '7', '7', '6', '6', '5', '5', '5', '4', '4', '4', '3', '3', '3', '2', '2'];
   const tableColumnMap = ['a', 'b', 'c', 'd'];
 
   for (let tableRow = 0; tableRow < 18; tableRow += 1) {
-    const y = 51 + 13 * tableRow + 1;
+    const y = 54 + 13 * tableRow + 1;
     for (let tableColumn = 0; tableColumn < 4; tableColumn += 1) {
       const row = tableRowMap[tableRow];
       const column = tableColumnMap[tableColumn];
@@ -33,22 +33,22 @@ function initTables() {
         tables[row][column] = [];
       }
 
-      if (tableRow === 11 && tableColumn < 3) {
+      if (tableRow === 6 && tableColumn > 0) {
         continue;
       }
 
       switch (tableColumn) {
         case 0:
-          tables[row][column].push(...[[18, y, false], [26, y, false]]);
+          tables[row][column].push(...[[4, y, true], [16, y, false]]);
           break;
         case 1:
-          tables[row][column].push(...[[50, y, true], [62, y, true]]);
+          tables[row][column].push(...[[40, y, true], [52, y, true]]);
           break;
         case 2:
-          tables[row][column].push(...[[90, y, true], [102, y, true]]);
+          tables[row][column].push(...[[80, y, true], [92, y, true]]);
           break;
         case 3:
-          tables[row][column].push(...[[130, y, false], [138, y, true]]);
+          tables[row][column].push(...[[120, y, false], [128, y, false]]);
           break;
         default:
           break;
@@ -91,12 +91,13 @@ export function draw(canvas) {
   ctx.fillStyle = variables.markersFill;
   ctx.font = variables.font;
   ctx.strokeRect(2, 2, width - 4, height - 4); // outer border
-  ctx.fillText('L3', 15, 20);
-  ctx.fillText('L4', 50, 20);
-  ctx.fillText('L5', 85, 20);
-  ctx.fillText('L6', 120, 20);
-  ctx.fillText('SB', 40, 325);
-  ctx.fillText('MüK', 107, 320);
+  ctx.fillText('SB', 70, 20);
+  ctx.fillText('MüK', 7, 25);
+  ctx.textAlign = 'center';
+  ctx.fillText('L3', 3 + 3.5 * ((width - 6) / 4), 325);
+  ctx.fillText('L4', 3 + 2.5 * ((width - 6) / 4), 325);
+  ctx.fillText('L5', 3 + 1.5 * ((width - 6) / 4), 325);
+  ctx.fillText('L6', 3 + 0.5 * ((width - 6) / 4), 325);
 
   // tables
   ctx.lineWidth = 1;
