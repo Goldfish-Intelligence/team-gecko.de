@@ -51,25 +51,42 @@ function konami() {
 let state = 0;
 let lastKeyPress = 0;
 
-window.addEventListener('keydown', (e) => {
-  // reset if it's been too long since the last keypress
-  if (Date.now() - lastKeyPress > keyPressTimeout) {
-    state = 0;
+function initKonamiDetector() {
+  // prevent multiple initializations on page changes
+  // swup does not reload the page, so the listener is not removed
+  if (window.konamiInitialized) {
+    return;
   }
+  window.konamiInitialized = true;
 
-  if (e.key === konamiCode[state]) {
-    state += 1;
-    lastKeyPress = Date.now();
-  } else if (state === 2 && e.key === 'ArrowUp') {
-    // if the user presses up more than twice in a row, we only count the last two
-    // otherwise starting with any odd number of up presses would not work
-    state = 2;
-  } else {
-    state = 0;
-  }
+  window.addEventListener('keydown', (e) => {
+    // reset if it's been too long since the last keypress
+    if (Date.now() - lastKeyPress > keyPressTimeout) {
+      state = 0;
+    }
 
-  if (state === konamiCode.length) {
-    state = 0;
-    konami();
-  }
-});
+    if (e.key === konamiCode[state]) {
+      state += 1;
+      lastKeyPress = Date.now();
+    } else if (state === 2 && e.key === 'ArrowUp') {
+      // if the user presses up more than twice in a row, we only count the last two
+      // otherwise starting with any odd number of up presses would not work
+      state = 2;
+    } else {
+      state = 0;
+    }
+
+    if (state === konamiCode.length) {
+      state = 0;
+      konami();
+    }
+  });
+}
+
+if (document.readyState !== 'loading') {
+  initKonamiDetector();
+} else {
+  window.addEventListener('DOMContentLoaded', () => {
+    initKonamiDetector();
+  });
+}
