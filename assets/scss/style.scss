@@ -406,18 +406,18 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
     justify-content: space-evenly;
     padding-bottom: 1em;
     border: 0.2em solid transparent;
-    transition: border-radius 0.5s ease-out;
+    transition: border-radius 2s ease-out;
 
     &:hover,
     &:focus {
-      transition-duration: 1s;
+      transition-duration: 0.3s;
     }
   }
 
   $first-radius-offset: 30;
   $first-radius-limit: 30;
   $second-radius-offset: 30;
-  $second-radius-limit: 20;
+  $second-radius-limit: 10;
   @for $i from 1 through $timetable-children {
     $radii-1st: math.random($first-radius-limit) + $first-radius-offset * 1%
                 math.random($first-radius-limit) + $first-radius-offset * 1%
@@ -430,8 +430,8 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
     $radii-1st-wobbly: $radii-1st;
     $radii-2nd-wobbly: $radii-1st;
     @for $j from 1 through 4 {
-      $radii-1st-wobbly: list.set-nth($radii-1st-wobbly, $j, list.nth($radii-1st-wobbly, $j) * (1.2 - 0.5 * math.random()));
-      $radii-2nd-wobbly: list.set-nth($radii-2nd-wobbly, $j, list.nth($radii-2nd-wobbly, $j) * (1.2 - 0.5 * math.random()));
+      $radii-1st-wobbly: list.set-nth($radii-1st-wobbly, $j, list.nth($radii-1st-wobbly, $j) * (1.7 - 0.5 * math.random()));
+      $radii-2nd-wobbly: list.set-nth($radii-2nd-wobbly, $j, list.nth($radii-2nd-wobbly, $j) * (1.7 - 0.5 * math.random()));
     }
 
     .timetable-slot:nth-child(#{$i}) {
