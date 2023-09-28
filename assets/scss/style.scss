@@ -404,6 +404,7 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
     align-content: stretch;
     align-items: stretch;
     justify-content: space-evenly;
+    padding-top: 0.3em;
     padding-bottom: 1em;
     border: 0.2em solid transparent;
     transition: border-radius 2s ease-out;
@@ -470,7 +471,7 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
   .timetable-time {
     display: inline-block;
     width: 100%;
-    margin-top: 0.5em;
+    margin-top: 0.3em;
     color: $color-accent;
     font-family: $logo-font-stack;
     font-size: 1.2em;
@@ -496,9 +497,9 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
 
 @media screen and (max-width: $breakpoint-l) {
   .timetable {
-    left: -5%;
-    width: 110%;
-    font-size: 0.8em;
+    left: -10%;
+    width: 120%;
+    font-size: 0.75em;
   }
 }
 
