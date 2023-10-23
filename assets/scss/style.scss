@@ -568,8 +568,9 @@ h2#tutorinnen {
 
   img {
     display: block;
-    display: none;
     margin: 0 auto;
+    opacity: 0;
+    transform: scale(0);
     // zoom into mouth when scaling
     transform-origin: 40% 65%;
   }

@@ -18,16 +18,10 @@ function konami() {
   document.querySelector('#konami > img').animate(
     [
       {
-        offset: 0.00, display: 'none', opacity: 0,
-      },
-      {
-        offset: 0.01, display: 'block', transform: 'scale(0)', opacity: 0,
+        offset: 0.00, transform: 'scale(0)', opacity: 0,
       },
       {
         offset: 0.10, opacity: 1,
-      },
-      {
-        offset: 0.70, opacity: 1,
       },
       {
         offset: 0.80, transform: 'scale(3)',
