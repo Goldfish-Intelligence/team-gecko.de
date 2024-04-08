@@ -118,9 +118,7 @@ export function draw(canvas) {
   ctx.strokeStyle = variables.outlineStroke;
   ctx.fillStyle = variables.markersFill;
   ctx.font = variables.font;
-  for (let i = -1; i <= 4; i += 1) {
-    drawFloor(ctx, i);
-  }
+  drawFloor(ctx);
 
   // corners
   ctx.lineWidth = 1;

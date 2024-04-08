@@ -1,11 +1,13 @@
 import * as mb from './maps/mb';
 import * as muek from './maps/muek';
 import * as ms from './maps/ms';
+import * as kom from './maps/kom';
 
 const locationFormats = {};
 locationFormats[mb.key] = mb;
 locationFormats[muek.key] = muek;
 locationFormats[ms.key] = ms;
+locationFormats[kom.key] = kom;
 
 const canShare = navigator.share && navigator.canShare({ title: 'IGGG', text: '…', url: 'https://team-gecko.de' });
 

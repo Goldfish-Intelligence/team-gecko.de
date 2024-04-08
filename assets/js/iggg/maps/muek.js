@@ -296,7 +296,6 @@ function drawAngle(canvasContext, alpha, beta) {
   const centerY = 75;
   const radius = Math.max(width, height);
 
-  // eslint-disable-next-line no-param-reassign
   canvasContext.fillStyle = variables.hightlightTransparent;
 
   canvasContext.moveTo(centerX, centerY);
