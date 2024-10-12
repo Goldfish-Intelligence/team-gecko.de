@@ -3,9 +3,5 @@ languageCode = 'de-de'
 disableKinds = ["taxonomy", "RSS", "term"]
 title = 'Team Gecko'
 
-[privacy]
-    [privacy.youtube]
-        privacyEnhanced = true
-
 [markup.goldmark.renderer]
 unsafe = true
