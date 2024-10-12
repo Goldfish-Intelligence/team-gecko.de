@@ -398,7 +398,6 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
 
   .timetable-slot {
     display: flex;
-    overflow: hidden;
     min-width: 8.5em;
     flex-direction: column;
     align-content: stretch;
@@ -407,11 +406,21 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
     padding-top: 0.3em;
     padding-bottom: 1em;
     border: 0.2em solid transparent;
+    -ms-overflow-style: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
     transition: border-radius 2s ease-out;
 
     &:hover,
     &:focus {
       transition-duration: 0.3s;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+      background: transparent;
     }
   }
 
