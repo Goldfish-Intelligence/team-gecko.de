@@ -234,6 +234,18 @@ main {
   }
 }
 
+.deprecated {
+  display: inline-block;
+  color: color.adjust($color-accent, $red: 80);
+  font-size: 0.8em;
+
+  > svg {
+    height: 1.4em;
+    margin-right: 0.2em;
+    vertical-align: middle;
+  }
+}
+
 #social {
   text-align: center;
   user-select: none;
