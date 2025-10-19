@@ -366,7 +366,7 @@ $timetable-children: (1 + $timetable-rows) * $timetable-columns;
   column-gap: 0.4em;
   grid-auto-flow: column;
   grid-template-columns: repeat($timetable-columns, 1fr);
-  grid-template-rows: 2em repeat($timetable-rows, 10em);
+  grid-template-rows: 2em repeat($timetable-rows, 1fr);
   row-gap: 0.5em;
 
   .timetable-header {
