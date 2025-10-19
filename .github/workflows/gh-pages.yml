@@ -17,21 +17,20 @@ jobs:
         with:
           fetch-depth: 0
       - name: hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
       - name: node
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '22'
           cache: 'npm'
       - name: dependencies
         run: |
-          mkdir -p ~/.local/bin
-          curl -Ls https://github.com/sass/dart-sass-embedded/releases/download/1.55.0/sass_embedded-1.55.0-linux-x64.tar.gz | tar -xz --strip-components 1 -C ~/.local/bin sass_embedded/dart-sass-embedded
+          curl -Ls https://github.com/sass/dart-sass/releases/download/1.93.2/dart-sass-1.93.2-linux-x64.tar.gz | tar -xz --strip-components 1 -C /usr/local/bin
           npm ci
       - name: build
-        run: hugo -v
+        run: hugo
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'

@@ -1,1 +1,5 @@
-{{ with .GetPage "2025" }}{{.Render "single"}}{{end}}
+{{ define "main" }}
+{{ with .GetPage "2025" }}
+{{ .Content }}
+{{ end }}
+{{ end }}
