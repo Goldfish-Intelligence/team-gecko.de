@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /img/tutors/
 
 Sitemap: https://team-gecko.de/sitemap.xml
