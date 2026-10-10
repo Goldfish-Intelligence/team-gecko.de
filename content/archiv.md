@@ -7,6 +7,7 @@ draft: false
 ## Vergangene O-Phasen
 
 {{% archive/container %}}
+{{% archive/entry title="wirkaufendeinauto-phase 2025" subtitle="Ralf Schumacher?!?!" year=2025 %}}
 {{% archive/entry title="VerlO-Phase 2024" subtitle="Wolfgang pass auf!!! Ach du Scheiße, der hat 'nen Reifen verlO-Phase" year=2024 %}}
 {{% archive/entry title="H2O-Phase" subtitle="Plötzlich Ersti" year=2023 %}}
 {{% archive/entry title="The Ö-Phäse" subtitle="Nett hier, aber waren Sie schon einmal Ersti?" year=2022 %}}
